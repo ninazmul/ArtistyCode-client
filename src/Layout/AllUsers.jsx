@@ -57,7 +57,7 @@ const AllUsers = () => {
   return (
     <div>
       <div>
-        <h1 className="text-center text-4xl pt-4 text-orange-500 font-extrabold uppercase">
+        <h1 className="text-center text-4xl pt-4 text-purple-700 gradient-text font-extrabold uppercase">
           My Details
         </h1>
         <div className="flex justify-center p-4">
@@ -65,7 +65,7 @@ const AllUsers = () => {
         </div>
       </div>
       <div className="">
-        <h1 className="text-center text-4xl pt-4 text-orange-500 font-extrabold uppercase">
+        <h1 className="text-center text-4xl pt-4 text-purple-700 gradient-text font-extrabold uppercase">
           All User's: {users.length}
         </h1>
         <div className="overflow-x-auto">
@@ -74,10 +74,10 @@ const AllUsers = () => {
             <thead>
               <tr>
                 <th></th>
-                <th className="text-orange-200">Name</th>
-                <th className="text-orange-200">Email</th>
-                <th className="text-orange-200">Role</th>
-                <th className="text-orange-200">Action</th>
+                <th className="text-white">Name</th>
+                <th className="text-white">Email</th>
+                <th className="text-white">Role</th>
+                <th className="text-white">Action</th>
               </tr>
             </thead>
             <tbody>
@@ -92,7 +92,7 @@ const AllUsers = () => {
                     ) : (
                       <button
                         onClick={() => handleMakeAdmin(user)}
-                        className="btn btn-sm btn-outline text-orange-500 rounded-full"
+                        className="btn btn-sm btn-outline text-purple-700 gradient-text rounded-full"
                       >
                         Make Admin
                       </button>
@@ -103,7 +103,7 @@ const AllUsers = () => {
                       onClick={() => handleDeleteUser(user)}
                       className="btn btn-ghost btn-lg"
                     >
-                      <FaTrashCan className="text-red-600"></FaTrashCan>
+                      <FaTrashCan className="text-red-700"></FaTrashCan>
                     </button>
                   </td>
                 </tr>

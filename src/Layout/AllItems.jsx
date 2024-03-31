@@ -46,7 +46,7 @@ const AllItems = () => {
   return (
     <div>
       <div className="">
-        <h1 className="text-center text-4xl pt-4 text-orange-500 font-extrabold uppercase">
+        <h1 className="text-center text-4xl pt-4 text-purple-700 gradient-text font-extrabold uppercase">
           Manage All item's: {items.length}
         </h1>
         <div className="overflow-x-auto">
@@ -56,9 +56,9 @@ const AllItems = () => {
               <tr>
                 <th></th>
                 <th></th>
-                <th className="text-orange-200">Name</th>
-                <th className="text-orange-200">Update</th>
-                <th className="text-orange-200">Remove</th>
+                <th className="text-white">Name</th>
+                <th className="text-white">Update</th>
+                <th className="text-white">Remove</th>
               </tr>
             </thead>
             <tbody>
@@ -96,14 +96,14 @@ const AllItems = () => {
                   <td>
                     <Link
                       to={`/dashboard/update/${item._id}`}
-                      className="btn btn-outline btn-sm rounded-full text-orange-500"
+                      className="btn btn-outline btn-sm rounded-full text-purple-700 gradient-text"
                     >
                       Update
                     </Link>
                   </td>
                   <td>
                     <button onClick={() => handleOnDelete(item._id)}>
-                      <FaTrashCan className="text-red-600"></FaTrashCan>
+                      <FaTrashCan className="text-red-700"></FaTrashCan>
                     </button>
                   </td>
                 </tr>

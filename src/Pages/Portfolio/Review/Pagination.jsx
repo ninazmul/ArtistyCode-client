@@ -6,10 +6,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       {pageNumbers.map((page) => (
         <button
           key={page}
-          className={`px-4 py-2 border border-orange-500 rounded-full ${
+          className={`px-4 py-2 border border-purple-700 rounded-full ${
             currentPage === page
-              ? "bg-orange-500 text-orange-200"
-              : "text-orange-500 hover:bg-green-100"
+              ? "bg-purple-700 text-white"
+              : "text-purple-700 gradient-text hover:bg-green-100"
           }`}
           onClick={() => onPageChange(page)}
         >

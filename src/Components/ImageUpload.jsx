@@ -51,7 +51,7 @@ const ImageUpload = ({ uploadedImages, setUploadedImages }) => {
                 />
                 <button
                   onClick={() => handleRemove(index)}
-                  className="absolute top-2 right-2 h-8 w-8 rounded-full bg-red flex items-center justify-center text-orange-200 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-300"
+                  className="absolute top-2 right-2 h-8 w-8 rounded-full bg-red flex items-center justify-center text-white opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-300"
                 >
                   <IoClose size="20" />
                 </button>
@@ -72,11 +72,11 @@ const ImageUpload = ({ uploadedImages, setUploadedImages }) => {
             type="file"
             accept="image/*"
             onChange={handlePictureUpload}
-            className="w-full hidden focus:outline-none border-none p-[10px] text-darkBlue placeholder:text-darkBlue"
+            className="w-full hidden focus:outline-none border-none p-[10px] text-darkpurple placeholder:text-darkpurple"
           />
           <button
             type="button"
-            className="flex items-center gap-3 flex-wrap justify-center bg-lightGray text-orange-200 px-4 py-2"
+            className="flex items-center gap-3 flex-wrap justify-center bg-lightGray text-white px-4 py-2"
           >
             <FaCloudUploadAlt size="30" />
             Click to select photo

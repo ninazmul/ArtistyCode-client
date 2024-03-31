@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { FaUserCircle } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import ActiveLink from "../../Components/ActiveLink";
+import logo from "../../assets/Ac logo white text.webp";
 
 const Navbar = () => {
   const { user, signOUT } = useContext(AuthContext);
@@ -37,7 +38,7 @@ const Navbar = () => {
       </ActiveLink>
 
       <ActiveLink spy="true" smooth="true" to="/about">
-        <li>About Me</li>
+        <li>About Us</li>
       </ActiveLink>
 
       <ActiveLink spy="true" smooth="true" to="/portfolio">
@@ -69,21 +70,21 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow glass bg-orange-500 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow glass bg-blue-500 text-purple-700 rounded-box w-52"
             >
               {navBtn}
             </ul>
           </div>
           <NavLink to="/">
             <img
-              className="normal-case w-32 text-xl"
-              src="https://i.ibb.co/353tbns/N-I-Logo-croped.png"
+              className="normal-case w-16 lg:w-20 text-xl"
+              src={logo}
               alt=""
             />
           </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex transition">
-          <ul className="menu menu-horizontal px-1">{navBtn}</ul>
+          <ul className="menu menu-horizontal px-4 border-2 rounded-full border-blue-700 bg-blue-500/20">{navBtn}</ul>
         </div>
         <div className="navbar-end gap-2">
           <div className="dropdown dropdown-end">
@@ -100,7 +101,7 @@ const Navbar = () => {
                     src={user.photoURL}
                   />
                 ) : (
-                  <div className="text-4xl text-orange-500">
+                  <div className="text-4xl text-purple-700">
                     <FaUserCircle />
                   </div>
                 )}
@@ -108,19 +109,19 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-orange-500 rounded-box min-w-full w-auto  gap-4"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-700 rounded-box min-w-full w-auto  gap-4"
             >
               <li>
                 <NavLink to="/dashboard">
                   {user?.displayName && (
-                    <p className="justify-between hover:text-orange-600 transition text-2xl cursor-pointer">
+                    <p className="justify-between hover:text-purple-700 gradient-text transition text-2xl cursor-pointer">
                       {user.displayName}
                     </p>
                   )}
                 </NavLink>
 
                 {user?.email && (
-                  <p className="justify-between hover:text-orange-600 transition cursor-pointer">
+                  <p className="justify-between hover:text-purple-700 gradient-text transition cursor-pointer">
                     {user.email}
                   </p>
                 )}
@@ -131,7 +132,7 @@ const Navbar = () => {
                   <button
                     onClick={handleSignOut}
                     data-aos="fade-right"
-                    className="neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-200 text-orange-50 w-52 rounded-lg p-2 uppercase relative overflow-hidden text-center"
+                    className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-white text-orange-50 w-52 rounded-lg p-2 uppercase relative overflow-hidden text-center"
                   >
                     SignOut
                   </button>
@@ -140,7 +141,7 @@ const Navbar = () => {
                 <NavLink to="/signIn" className="">
                   <button
                     data-aos="fade-right"
-                    className="neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-wheat rounded-lg p-2 uppercase relative overflow-hidden text-center w-40"
+                    className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-wheat rounded-lg p-2 uppercase relative overflow-hidden text-center w-40"
                   >
                     SignIn
                   </button>
@@ -151,17 +152,17 @@ const Navbar = () => {
           <button className="flex items-center">
             <div className="chat chat-start hidden md:flex">
               <ReactWhatsapp
-                className="chat-bubble bg-gradient-to-r from-orange-500 to-orange-700 text-orange-200 text-xl font-bold w-48 flex items-center justify-between neno-button shadow-xl hover:shadow-orange-800/50"
+                className="chat-bubble bg-gradient-to-r from-purple-700 to-blue-700 text-white text-xl font-bold w-52 flex items-center justify-between neno-button shadow-xl hover:shadow-purple-800/50"
                 number="+8801580845746"
                 message="As-salamu alaykum. I'm interested in learning more about your services."
               >
-                Contact Me
+                Contact Us
                 <IoLogoWhatsapp size={24} />
               </ReactWhatsapp>
             </div>
             <div className=" md:hidden">
               <ReactWhatsapp
-                className=" text-4xl text-orange-500 shadow-xl hover:shadow-orange-800/50"
+                className=" text-4xl text-purple-700 gradient-text shadow-xl hover:shadow-purple-800/50"
                 number="+8801580845746"
                 message="As-salamu alaykum. I'm interested in learning more about your services."
               >

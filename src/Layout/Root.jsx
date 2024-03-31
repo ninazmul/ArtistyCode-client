@@ -54,10 +54,10 @@ const Root = () => {
       },
       particles: {
         color: {
-          value: ["#FFF5EE", "#F08000"],
+          value: ["#2200ff", "#8e00fb"],
         },
         links: {
-          color: "#FF5F15",
+          color: "#9067f6ab",
           distance: 150,
           enable: true,
           opacity: 0.5,

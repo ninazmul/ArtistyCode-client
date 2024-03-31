@@ -4,12 +4,14 @@
 
 :root {
   /* Add !important to override Tailwind CSS */
-  color: wheat;
+  color: white;
   background-image: url("../src/assets/long-shot-couple-metaverse-date.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .overlay {
@@ -27,24 +29,35 @@
   transition: all 0.3s ease-in-out;
 }
 .glow:hover {
-  box-shadow: 0 0 25px rgb(255, 95, 21); /* Orange glow effect on hover */
+  box-shadow: 0 0 25px #2200ff; /* Orange glow effect on hover */
 }
 
 .img_glow {
-  box-shadow: 0 0 55px rgb(255, 95, 21); /* Larger glow effect for the image */
+  box-shadow: 0 0 55px #2200ff; /* Larger glow effect for the image */
 }
 
 .neno-button {
   transition: all 0.3s ease-in-out;
 }
 .neno-button:hover {
-  box-shadow: 0 0 15px rgb(255, 95, 21); /* Light orange glow effect for buttons */
+  box-shadow: 0 0 15px #2200ff; /* Light orange glow effect for buttons */
 }
 
 .card_glow {
-  box-shadow: 0 0 25px rgb(255, 95, 21); /* Orange glow for cards */
+  box-shadow: 0 0 25px #2200ff; /* Orange glow for cards */
 }
 
 .input_glow {
-  box-shadow: 0 0 15px rgb(255, 95, 21); /* Light orange glow for input fields */
+  box-shadow: 0 0 15px #2200ff; /* Light orange glow for input fields */
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #8e00fb, #2200ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-background {
+  background-image: linear-gradient(to right, #8e00fb, #2200ff);
 }

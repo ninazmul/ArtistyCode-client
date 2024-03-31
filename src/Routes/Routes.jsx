@@ -98,9 +98,7 @@ const routes = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://portfolio-server-umber-pi.vercel.app/items/${params.id}`
-          ),
+          fetch(`https://artistycode-server.vercel.app/items/${params.id}`),
       },
       {
         path: "/dashboard/users",
@@ -134,9 +132,7 @@ const routes = createBrowserRouter([
           </AdminRoute>
         ),
         loader: ({ params }) =>
-          fetch(
-            `https://portfolio-server-umber-pi.vercel.app/reviews/${params.id}`
-          ),
+          fetch(`https://artistycode-server.vercel.app/reviews/${params.id}`),
       },
       {
         path: "/dashboard/allReviews",

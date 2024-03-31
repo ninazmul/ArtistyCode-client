@@ -104,14 +104,16 @@ const UpdateReview = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-4xl font-bold text-center">
             Update Review in{" "}
-            <span className="text-orange-500">N.I. Nazmul</span>'s Portfolio!
+            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
+            's Portfolio!
           </h1>
           <p className="py-6">
             Update the details below for the review in{" "}
-            <span className="text-orange-500">N.I. Nazmul</span>'s portfolio.
+            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>'s
+            portfolio.
           </p>
         </div>
-        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-orange-500 card_glow text-orange-200">
+        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
           <form className="card-body" onSubmit={handleSubmit}>
             {/* Image input */}
             <div className="form-control">
@@ -122,7 +124,7 @@ const UpdateReview = () => {
                 type="text"
                 placeholder="Image URL"
                 name="image"
-                className="input input-bordered glass border-orange-700 border-2 input_glow"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
                 value={formData.image}
               />
@@ -153,7 +155,7 @@ const UpdateReview = () => {
               <textarea
                 placeholder="Write your review..."
                 name="reviewText"
-                className="textarea textarea-bordered glass border-orange-700 border-2 input_glow"
+                className="textarea textarea-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
                 value={formData.reviewText}
               />
@@ -162,7 +164,7 @@ const UpdateReview = () => {
             {error && <div className="text-red-500 mt-2">{error}</div>}
             <div className="form-control mt-6">
               <button
-                className="neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
+                className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
                 type="submit"
               >
                 Update Review

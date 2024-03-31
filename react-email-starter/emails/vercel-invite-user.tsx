@@ -72,7 +72,7 @@ export const VercelInviteUserEmail = ({
               <strong>bukinoshita</strong> (
               <Link
                 href={`mailto:${invitedByEmail}`}
-                className="text-blue-600 no-underline"
+                className="text-purple-700 gradient-text no-underline"
               >
                 {invitedByEmail}
               </Link>
@@ -111,7 +111,7 @@ export const VercelInviteUserEmail = ({
               <Button
                 pX={20}
                 pY={12}
-                className="bg-[#000000] rounded text-orange-200 text-[12px] font-semibold no-underline text-center"
+                className="bg-[#000000] rounded text-white text-[12px] font-semibold no-underline text-center"
                 href={inviteLink}
               >
                 Join the team
@@ -119,7 +119,10 @@ export const VercelInviteUserEmail = ({
             </Section>
             <Text className="text-black text-[14px] leading-[24px]">
               or copy and paste this URL into your browser:{" "}
-              <Link href={inviteLink} className="text-blue-600 no-underline">
+              <Link
+                href={inviteLink}
+                className="text-purple-700 gradient-text no-underline"
+              >
                 {inviteLink}
               </Link>
             </Text>

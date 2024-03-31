@@ -24,29 +24,32 @@ const About = () => {
           <div className="flex-1">
             <img
               src={img}
-              className="border-2 p-1 border-orange-500 img_glow "
+              className="border-2 p-1 border-purple-700 img_glow "
             />
           </div>
           <div className="flex-1">
             <p className=" text-xl text-center">As-salamu alaykum</p>
             <h1 className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase">
-              I'm <span className="text-orange-500">Nazmul Islam</span>
+              I'm{" "}
+              <span className="text-purple-700 gradient-text">
+                Nazmul Islam
+              </span>
             </h1>
             <p className="md:py-6 md:text-xl md:px-4 text-justify">
               But you can call me{" "}
-              <span className="text-orange-500">N.I. Nazmul</span>. I'm not your
-              run-of-the-mill professional, I'm a creative chameleon with a
-              diverse skill set. You see, I wear many hats - I'm a web-weaving
-              wizard, a voice virtuoso, a graphics guru, and a master of visual
-              storytelling through photo and video editing. My secret sauce?
-              It's a blend of unwavering passion for design, a hawk-like eye for
-              detail, and a deep well of technical expertise. These ingredients
-              allow me to approach each project with a dash of uniqueness and a
-              pinch of effectiveness. Picture this: I can whip up graphics that
-              make your eyes dance, infuse voiceovers with soul, and breathe
-              life into photos and videos. My track record of delivering
-              exceptional results is a testament to my versatility and
-              dedication to my craft. The pages of my portfolio unfold a
+              <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
+              . I'm not your run-of-the-mill professional, I'm a creative
+              chameleon with a diverse skill set. You see, I wear many hats -
+              I'm a web-weaving wizard, a voice virtuoso, a graphics guru, and a
+              master of visual storytelling through photo and video editing. My
+              secret sauce? It's a blend of unwavering passion for design, a
+              hawk-like eye for detail, and a deep well of technical expertise.
+              These ingredients allow me to approach each project with a dash of
+              uniqueness and a pinch of effectiveness. Picture this: I can whip
+              up graphics that make your eyes dance, infuse voiceovers with
+              soul, and breathe life into photos and videos. My track record of
+              delivering exceptional results is a testament to my versatility
+              and dedication to my craft. The pages of my portfolio unfold a
               tapestry of creativity, showcasing my wide-ranging talents. I
               thrive on fresh challenges and am always raring to go, ready to
               embark on new and exciting projects. But here's the kicker: I'm
@@ -72,7 +75,7 @@ const About = () => {
           <div className="flex justify-center py-2">
             <h1
               data-aos="fade-left"
-              className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase text-orange-200 border-b-4 px-4 border-orange-500 rounded-lg"
+              className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase text-white border-b-4 px-4 border-purple-700 rounded-lg"
             >
               Summary
             </h1>
@@ -97,7 +100,7 @@ const About = () => {
             <a
               data-aos="fade-right"
               href="https://drive.google.com/file/d/1aihDBamIngdPD7HTmNsYOysAdE4E3ay4/view?usp=sharing"
-              className="btn btn-outline font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-orange-200 hover:text-none"
+              className="btn btn-outline font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-white hover:text-none"
             >
               Download RESUME{" "}
               <span>
@@ -107,7 +110,7 @@ const About = () => {
             <a
               data-aos="fade-left"
               href="https://drive.google.com/file/d/1d-tRE1wM4H1c2tmUWF8P09hyJRrz3Xl6/view?usp=sharing"
-              className="btn btn-outline font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-orange-200 hover:text-none"
+              className="btn btn-outline font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-white hover:text-none"
             >
               Download CV{" "}
               <span>
@@ -121,7 +124,7 @@ const About = () => {
         <div className="flex justify-center py-2">
           <h1
             data-aos="fade-right"
-            className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase px-4 text-orange-200 border-b-4 border-orange-500 rounded-lg"
+            className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase px-4 text-white border-b-4 border-purple-700 rounded-lg"
           >
             My Agency
           </h1>
@@ -147,7 +150,7 @@ const About = () => {
                   to="https://www.facebook.com/ArtistyCodeStudio"
                   className="card-actions justify-end"
                 >
-                  <button className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center">
+                  <button className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center">
                     Visit now!
                   </button>
                 </Link>

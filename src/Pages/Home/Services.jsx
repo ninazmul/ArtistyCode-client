@@ -62,7 +62,7 @@ const Services = () => {
   return (
     <div className="py-4 md:py-10" data-aos="fade-up">
       <div className="flex justify-center py-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-orange-200 uppercase px-4 border-orange-500">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700">
           All Services
         </h1>
       </div>
@@ -79,7 +79,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_1").showModal()
                     }
@@ -121,7 +121,7 @@ const Services = () => {
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>
@@ -142,7 +142,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_2").showModal()
                     }
@@ -205,7 +205,7 @@ const Services = () => {
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>
@@ -226,7 +226,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_3").showModal()
                     }
@@ -292,7 +292,7 @@ const Services = () => {
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>
@@ -313,7 +313,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_4").showModal()
                     }
@@ -354,7 +354,7 @@ const Services = () => {
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>
@@ -374,7 +374,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_5").showModal()
                     }
@@ -417,7 +417,7 @@ const Services = () => {
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>
@@ -438,7 +438,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
                     onClick={() =>
                       document.getElementById("my_modal_6").showModal()
                     }
@@ -504,7 +504,7 @@ const Services = () => {
                   </p>
                   <div className="modal-action">
                     <form method="dialog">
-                      <button className="btn btn-outline text-orange-200 neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-2xl uppercase relative overflow-hidden text-center">
+                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>
                     </form>

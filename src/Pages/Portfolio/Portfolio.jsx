@@ -13,9 +13,13 @@ const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const sortedItems = item.sort((a, b) => new Date(b.createdDate) - new Date(a.createdDate));
+  const sortedItems = item.sort(
+    (a, b) => new Date(b.createdDate) - new Date(a.createdDate)
+  );
 
-  const programming = sortedItems.filter((item) => item.niche === "Programming");
+  const programming = sortedItems.filter(
+    (item) => item.niche === "Programming"
+  );
   const voice = sortedItems.filter((item) => item.niche === "Voice");
   const graphics = sortedItems.filter((item) => item.niche === "Graphics");
 
@@ -88,7 +92,7 @@ const Portfolio = () => {
                           placeholder="Search by project name"
                           value={searchTerm}
                           onChange={handleSearchChange}
-                          className="p-2 border-orange-500 rounded shadow-lg glass"
+                          className="p-2 border-purple-700 rounded shadow-lg glass"
                         />
                       </li>
                     </ul>
@@ -153,10 +157,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       {pageNumbers.map((page) => (
         <button
           key={page}
-          className={`px-4 py-2 border border-orange-500 rounded-full ${
+          className={`px-4 py-2 border border-purple-700 rounded-full ${
             currentPage === page
-              ? "bg-orange-500 text-orange-200"
-              : "text-orange-500 hover:bg-green-100"
+              ? "bg-purple-700 text-white"
+              : "text-purple-700 gradient-text hover:bg-green-100"
           }`}
           onClick={() => onPageChange(page)}
         >

@@ -110,21 +110,21 @@ const SignIn = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-5xl font-bold">
             Welcome to{" "}
-            <Link to="/" className="text-orange-500">
+            <Link to="/" className="text-purple-700 gradient-text">
               N.I. Nazmul
             </Link>
             's Portfolio!
           </h1>
           <p className="py-6">
             Explore and enjoy{" "}
-            <Link to="/" className="text-orange-500">
+            <Link to="/" className="text-purple-700 gradient-text">
               N.I. Nazmul
             </Link>
             's creative projects. Sign in to access the full portfolio
             experience.
           </p>
         </div>
-        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-orange-500 card_glow text-orange-200">
+        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
           <form onSubmit={handleSignIn} className="card-body">
             {["email", "password"].map((field) => (
               <div key={field} className="form-control">
@@ -139,7 +139,7 @@ const SignIn = () => {
                     field.charAt(0).toUpperCase() + field.slice(1)
                   }`}
                   name={field}
-                  className="input input-bordered glass border-orange-700 border-2 input_glow"
+                  className="input input-bordered glass border-purple-700 border-2 input_glow"
                   required
                 />
               </div>
@@ -163,14 +163,14 @@ const SignIn = () => {
                 type="text"
                 placeholder="Type Captcha"
                 name="captcha"
-                className="input input-bordered glass border-orange-700 border-2 input_glow"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
                 required
               />
             </div>
             <div className="form-control mt-6">
               <input
                 disabled={disabled}
-                className="btn btn-outline neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
+                className="btn btn-outline neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
                 type="submit"
                 value="SignIn"
               />
@@ -180,7 +180,7 @@ const SignIn = () => {
               <button
                 type="button"
                 onClick={handleGoogleSignIn}
-                className="neno-button-google font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center flex items-center justify-center gap-1 text-bold"
+                className="neno-button-google font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center flex items-center justify-center gap-1 text-bold"
               >
                 <FcGoogle />
                 Google
@@ -188,7 +188,10 @@ const SignIn = () => {
             </div>
             <p className="text-center">
               Don't have an account?{" "}
-              <Link to="/signUp" className="underline text-orange-500">
+              <Link
+                to="/signUp"
+                className="underline text-purple-700 gradient-text"
+              >
                 Sign Up
               </Link>
             </p>

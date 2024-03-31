@@ -48,13 +48,13 @@ const Navbar = () => {
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-outline text-orange-500 text-xl m-1"
+          className="btn btn-outline text-purple-700 gradient-text text-xl m-1"
         >
           <CiMenuBurger />
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-orange-500 rounded-box w-52 text-lg"
+          className="dropdown-content z-[1] menu p-2 shadow bg-purple-700 rounded-box w-52 text-lg"
         >
           {isAdmin ? (
             <>
@@ -192,7 +192,7 @@ const Navbar = () => {
           )}
         </ul>
       </div>
-      <div className="hidden md:flex w-1/6 md:w-1/5 min-h-full bg-orange-500 fixed z-50 overflow-y-auto">
+      <div className="hidden md:flex w-1/6 md:w-1/5 min-h-full bg-purple-700 fixed z-50 overflow-y-auto">
         <ul className="menu text-xl font-bold">
           {isAdmin ? (
             <>

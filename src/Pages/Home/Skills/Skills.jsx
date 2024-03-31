@@ -8,7 +8,7 @@ const Skills = () => {
       <div className="flex justify-center">
         <h1
           data-aos="fade-left"
-          className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-orange-200 uppercase px-4 border-orange-500"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700"
         >
           My Skills
         </h1>
@@ -73,7 +73,7 @@ const Skills = () => {
           />
           <img
             className="w-32 p-2 rounded-lg"
-            src="https://i.ibb.co/5WkztDL/299463877-560030875914611-8025210373789510385-n.jpg"
+            src="https://i.ibb.co/5WkztDL/299463877-570030875914611-8025210373789510385-n.jpg"
             alt=""
           />
           <img
@@ -161,7 +161,7 @@ const Skills = () => {
         </Marquee>
       </div>
       <Link to="/portfolio" className="flex justify-center">
-        <button className="btn btn-outline m-4 border-t-0 border-x-0 border-b-4 neno-button shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-600 rounded-lg uppercase relative overflow-hidden text-center font-extrabold text-orange-200">
+        <button className="btn btn-outline m-4 border-t-0 border-x-0 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center font-extrabold text-white">
           Project Gallery
         </button>
       </Link>

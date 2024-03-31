@@ -92,15 +92,17 @@ const AddItems = () => {
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-4xl font-bold text-center">
-            Add Product to <span className="text-orange-500">N.I. Nazmul</span>
+            Add Product to{" "}
+            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
             's Portfolio!
           </h1>
           <p className="py-6">
             Fill in the details below to add a new product to{" "}
-            <span className="text-orange-500">N.I. Nazmul</span>'s portfolio.
+            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>'s
+            portfolio.
           </p>
         </div>
-        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-orange-500 card_glow text-orange-200">
+        <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
           <form className="card-body" onSubmit={handleSubmit}>
             <div className="form-control">
               <label className="label">
@@ -108,21 +110,31 @@ const AddItems = () => {
               </label>
               <select
                 name="niche"
-                className="input input-bordered glass border-orange-700 border-2 input_glow"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
                 value={formData.niche}
                 required
               >
-                <option className="text-orange-500" value="" disabled>
+                <option
+                  className="text-purple-700 gradient-text"
+                  value=""
+                  disabled
+                >
                   Select niche
                 </option>
-                <option className="text-orange-500" value="Voice">
+                <option className="text-purple-700 gradient-text" value="Voice">
                   Voice
                 </option>
-                <option className="text-orange-500" value="Graphics">
+                <option
+                  className="text-purple-700 gradient-text"
+                  value="Graphics"
+                >
                   Graphics
                 </option>
-                <option className="text-orange-500" value="Programming">
+                <option
+                  className="text-purple-700 gradient-text"
+                  value="Programming"
+                >
                   Programming
                 </option>
               </select>
@@ -134,21 +146,25 @@ const AddItems = () => {
               </label>
               <select
                 name="category"
-                className="input input-bordered glass border-orange-700 border-2 input_glow"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
                 value={formData.category}
                 required
               >
-                <option className="text-orange-500" value="" disabled>
+                <option
+                  className="text-purple-700 gradient-text"
+                  value=""
+                  disabled
+                >
                   Select category
                 </option>
-                <option className="text-orange-500" value="video">
+                <option className="text-purple-700 gradient-text" value="video">
                   Video
                 </option>
-                <option className="text-orange-500" value="image">
+                <option className="text-purple-700 gradient-text" value="image">
                   Image
                 </option>
-                <option className="text-orange-500" value="audio">
+                <option className="text-purple-700 gradient-text" value="audio">
                   Audio
                 </option>
               </select>
@@ -187,7 +203,7 @@ const AddItems = () => {
                       : "Audio URL"
                   }
                   name={urlField}
-                  className={`input input-bordered glass border-orange-700 border-2 input_glow`}
+                  className={`input input-bordered glass border-purple-700 border-2 input_glow`}
                   onChange={handleChange}
                 />
               </div>
@@ -201,7 +217,7 @@ const AddItems = () => {
                 type="text"
                 placeholder="Live Link"
                 name="liveLink"
-                className="input input-bordered glass border-orange-700 border-2 input_glow"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
                 value={formData.liveLink}
               />
@@ -221,7 +237,7 @@ const AddItems = () => {
                   <input
                     type="date"
                     name={field}
-                    className="input input-bordered glass border-orange-700 border-2 input_glow"
+                    className="input input-bordered glass border-purple-700 border-2 input_glow"
                     onChange={handleChange}
                   />
                 ) : (
@@ -231,7 +247,7 @@ const AddItems = () => {
                       field.charAt(0).toUpperCase() + field.slice(1)
                     }`}
                     name={field}
-                    className="input input-bordered glass border-orange-700 border-2 input_glow"
+                    className="input input-bordered glass border-purple-700 border-2 input_glow"
                     onChange={handleChange}
                     required
                   />
@@ -242,7 +258,7 @@ const AddItems = () => {
             {error && <div className="text-red-500 mt-2">{error}</div>}
             <div className="form-control mt-6">
               <button
-                className="neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
+                className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
                 type="submit"
               >
                 Add Item

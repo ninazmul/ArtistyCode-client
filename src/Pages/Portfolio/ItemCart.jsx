@@ -24,7 +24,7 @@ const ItemCart = ({ item }) => {
           <p>Created at {createdDate}</p>
           {liveLink && (
             <Link to={liveLink} className="card-actions justify-end">
-              <button className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-orange-700/50 border-2 text-orange-200 hover:bg-orange-500 border-orange-700 rounded-lg uppercase relative overflow-hidden text-center">
+              <button className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center">
                 Visit now!
               </button>
             </Link>

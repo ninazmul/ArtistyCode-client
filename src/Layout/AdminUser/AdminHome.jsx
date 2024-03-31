@@ -45,23 +45,23 @@ const AdminHome = () => {
 
   return (
     <div>
-      <h1 className="text-center text-4xl pt-4 text-orange-500 font-extrabold uppercase">
-        Welcome to <span className="text-orange-200">Admin</span> Home
+      <h1 className="text-center text-4xl pt-4 text-purple-700 gradient-text font-extrabold uppercase">
+        Welcome to <span className="text-white">Admin</span> Home
       </h1>
       <div className="flex justify-center my-4">
         <div className="stats stats-vertical lg:stats-horizontal shadow glass rounded-none w-full h-full ">
-          <div className="stat text-orange-200">
-            <div className="stat-title text-orange-200">Total Users</div>
+          <div className="stat text-white">
+            <div className="stat-title text-white">Total Users</div>
             <div className="stat-value">{stats.users}</div>
           </div>
 
-          <div className="stat text-orange-500">
-            <div className="stat-title text-orange-200">Total Items</div>
+          <div className="stat text-purple-700 gradient-text">
+            <div className="stat-title text-white">Total Items</div>
             <div className="stat-value">{stats.items}</div>
           </div>
 
-          <div className="stat text-orange-200">
-            <div className="stat-title text-orange-200">Total Reviews</div>
+          <div className="stat text-white">
+            <div className="stat-title text-white">Total Reviews</div>
             <div className="stat-value">{stats.reviews}</div>
           </div>
         </div>

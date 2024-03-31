@@ -41,19 +41,20 @@ const PasswordReset = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
             <h1 className="text-2xl md:text-5xl font-bold">
-              Password <span className="text-orange-500">Reset</span>!
+              Password{" "}
+              <span className="text-purple-700 gradient-text">Reset</span>!
             </h1>
             <p className="py-6">
               Enter your email to receive a password reset link.
             </p>
           </div>
-          <div className="card w-4/5 md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-orange-500 card_glow text-orange-200">
+          <div className="card w-4/5 md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
             <form className="card-body">
               <div>
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="w-full rounded-lg py-2 bg-wheat px-8 flex-shrink-0 shadow-2xl border-2 border-orange-500 card_glow text-orange-800"
+                  className="w-full rounded-lg py-2 bg-wheat px-8 flex-shrink-0 shadow-2xl border-2 border-purple-700 card_glow text-orange-800"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -62,7 +63,7 @@ const PasswordReset = () => {
               <div className="form-control mt-6">
                 <input
                   onClick={handlePasswordReset}
-                  className="btn btn-outline neno-button font-bold shadow-xl hover:shadow-orange-800/50 border-2 hover:bg-orange-500 border-orange-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
+                  className="btn btn-outline neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
                   type="submit"
                   value="Send Reset Email"
                 />
@@ -70,7 +71,10 @@ const PasswordReset = () => {
 
               <p className="text-center">
                 Remember your password?{" "}
-                <Link to="/signIn" className="underline text-orange-500">
+                <Link
+                  to="/signIn"
+                  className="underline text-purple-700 gradient-text"
+                >
                   Sign In
                 </Link>
               </p>
