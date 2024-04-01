@@ -26,9 +26,15 @@ const Footer = () => {
           </nav>
           <nav className="flex flex-col">
             <h6 className="footer-title">Services</h6>
-            <Link to="/terms" className="link link-hover">Terms & Conditions</Link>
-            <Link to="/privacy" className="link link-hover">Privacy policy</Link>
-            <Link to="/cookie" className="link link-hover">Cookie policy</Link>
+            <Link to="/terms" className="link link-hover">
+              Terms & Conditions
+            </Link>
+            <Link to="/privacy" className="link link-hover">
+              Privacy policy
+            </Link>
+            <Link to="/cookie" className="link link-hover">
+              Cookie policy
+            </Link>
           </nav>
           <nav>
             <h6 className="footer-title">Social</h6>
@@ -41,7 +47,7 @@ const Footer = () => {
                 <BsFacebook className="text-[28px]"></BsFacebook>
               </Link>
               <Link
-                href="https://github.com/ninazmul"
+                href="https://github.com/artistycode-studio"
                 className=" rounded-full glow p-2"
                 target="_blank"
               >

@@ -8,6 +8,7 @@ import acLogo from "/src/assets/Ac logo white text.webp";
 
 import img from "../../assets/my/Untitled design.webp";
 import { Link } from "react-router-dom";
+import Team from "../Team";
 const About = () => {
   useEffect(() => {
     Aos.init({
@@ -28,135 +29,107 @@ const About = () => {
             />
           </div>
           <div className="flex-1">
-            <p className=" text-xl text-center">As-salamu alaykum</p>
-            <h1 className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase">
-              I'm{" "}
-              <span className="text-purple-700 gradient-text">
-                Nazmul Islam
-              </span>
-            </h1>
-            <p className="md:py-6 md:text-xl md:px-4 text-justify">
-              But you can call me{" "}
-              <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
-              . I'm not your run-of-the-mill professional, I'm a creative
-              chameleon with a diverse skill set. You see, I wear many hats -
-              I'm a web-weaving wizard, a voice virtuoso, a graphics guru, and a
-              master of visual storytelling through photo and video editing. My
-              secret sauce? It's a blend of unwavering passion for design, a
-              hawk-like eye for detail, and a deep well of technical expertise.
-              These ingredients allow me to approach each project with a dash of
-              uniqueness and a pinch of effectiveness. Picture this: I can whip
-              up graphics that make your eyes dance, infuse voiceovers with
-              soul, and breathe life into photos and videos. My track record of
-              delivering exceptional results is a testament to my versatility
-              and dedication to my craft. The pages of my portfolio unfold a
-              tapestry of creativity, showcasing my wide-ranging talents. I
-              thrive on fresh challenges and am always raring to go, ready to
-              embark on new and exciting projects. But here's the kicker: I'm
-              not just about pixels and code. When I'm not crafting digital
-              wonders, I'm out in the world, lending a hand as a volunteer and
-              rescuing our furry friends. I'm a curious soul, constantly thirsty
-              for knowledge, and I'm a sucker for adventure. Animals? Well, they
-              hold a special place in my heart. And if you happen to be honest
-              and selfless, you're my kind of person. We should definitely sit
-              down over a cup of coffee and chat. You see, there's not much I
-              can say about myself because who I am depends on the stories and
-              experiences I share with people like you. Thanks for taking the
-              time to get to know me!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col lg:flex-row gap-4 py-6">
-        <div className="lg:w-1/2 p-4">
-          <Slider></Slider>
-        </div>
-        <div className="lg:w-1/2">
-          <div className="flex justify-center py-2">
-            <h1
-              data-aos="fade-left"
-              className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase text-white border-b-4 px-4 border-purple-700 rounded-lg"
-            >
-              Summary
-            </h1>
-          </div>
-          <p
-            data-aos="fade-left"
-            className="text-justify md:text-xl px-2 md:px-4"
-          >
-            I possess a wide array of creative skills, including proficiency in
-            website development, voiceover and dubbing, graphic design, as well
-            as photo and video editing. These talents allow me to approach
-            projects with a unique and effective perspective, consistently
-            delivering exceptional results. Whether it's crafting stunning
-            visuals, adding life to voiceovers, or enhancing photos and videos,
-            my skills and experience are finely honed for the job, ensuring
-            high-quality outcomes every time.
-          </p>
-          <div
-            data-aos="fade-up"
-            className="flex flex-col items-center justify-center py-4"
-          >
-            <a
-              data-aos="fade-right"
-              href="https://drive.google.com/file/d/1aihDBamIngdPD7HTmNsYOysAdE4E3ay4/view?usp=sharing"
-              className="btn btn-outline font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-white hover:text-none"
-            >
-              Download RESUME{" "}
-              <span>
-                <FaDownload />
-              </span>
-            </a>
-            <a
-              data-aos="fade-left"
-              href="https://drive.google.com/file/d/1d-tRE1wM4H1c2tmUWF8P09hyJRrz3Xl6/view?usp=sharing"
-              className="btn btn-outline font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center my-1 text-xl w-72 text-white hover:text-none"
-            >
-              Download CV{" "}
-              <span>
-                <FaDownload />
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div className="flex justify-center py-2">
-          <h1
-            data-aos="fade-right"
-            className="text-3xl md:text-5xl font-bold leading-normal text-center uppercase px-4 text-white border-b-4 border-purple-700 rounded-lg"
-          >
-            My Agency
-          </h1>
-        </div>
-        <div>
-          <div className=" glass flex flex-col md:flex-row rounded-lg items-center p-4">
-            <img src={acLogo} alt="" className="w-40 lg:w-52 p-4" />
-            <div className="">
-              <h2 className="text-2xl font-bold font-serif">
-                ArtistyCode Studio
-              </h2>
-              <p className="text-xs">
-                ArtistyCode Studio is a versatile digital agency offering
-                expertise in website development using technologies such as MERN
-                Stack, Next.js, and Wordpress. Our services extend to graphic
-                design, including branding and logo design, as well as
-                advertisement services like spokesperson and product review
-                videos. With a focus on delivering comprehensive digital
-                solutions, we empower businesses to thrive online.
+            <div className="flex justify-center pb-4">
+              <h1
+                data-aos="fade-up"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text"
+              >
+                About Us
+              </h1>
+            </div>
+            <div>
+              <p className="gradient-text text-justify">
+                Welcome to ArtistyCode Studio, where creativity meets innovation
+                to shape remarkable digital experiences.
               </p>
-              <div className="card-actions justify-end">
-                <Link
-                  to="https://www.facebook.com/ArtistyCodeStudio"
-                  className="card-actions justify-end"
-                >
-                  <button className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center">
-                    Visit now!
-                  </button>
-                </Link>
+              <p className="gradient-text text-justify">
+                At ArtistyCode, we're more than just a team of developers –
+                we're storytellers, problem-solvers, and visionaries. Founded on
+                the belief that every project is an opportunity to create
+                something extraordinary, we're passionate about pushing
+                boundaries and exceeding expectations.
+              </p>
+
+              <div className="py-2">
+                <h2 className="gradient-text text-xl font-bold">
+                  Our Mission:
+                </h2>
+                <p className="gradient-text text-justify">
+                  To empower businesses and individuals with cutting-edge
+                  digital solutions that inspire, engage, and drive success.
+                </p>
+              </div>
+              <div className="py-2">
+                <h2 className="gradient-text text-xl font-bold">
+                  Our Approach:
+                </h2>
+                <p className="gradient-text text-justify">
+                  We believe in collaboration, transparency, and continuous
+                  improvement. By fostering a culture of creativity and
+                  innovation, we ensure that every project benefits from fresh
+                  perspectives and bold ideas.
+                </p>
+              </div>
+              <div className="py-2">
+                <h1 className="text-2xl gradient-text font-bold">
+                  What Sets Us Apart:
+                </h1>
+                <div className="py-2">
+                  <h2 className="gradient-text text-xl font-bold">
+                    Expertise:
+                  </h2>
+                  <p className="gradient-text text-justify">
+                    Our team consists of seasoned professionals with expertise
+                    in a wide range of technologies and industries, ensuring
+                    that we can tackle any challenge with confidence and
+                    competence.
+                  </p>
+                </div>
+                <div className="py-2">
+                  <h2 className="gradient-text text-xl font-bold">
+                    Client-Centric Focus:
+                  </h2>
+                  <p className="gradient-text text-justify">
+                    We prioritize the needs and goals of our clients above all
+                    else, striving to deliver solutions that not only meet but
+                    exceed their expectations.
+                  </p>
+                </div>
+                <div className="py-2">
+                  <h2 className="gradient-text text-xl font-bold">
+                    Innovation:
+                  </h2>
+                  <p className="gradient-text text-justify">
+                    We're not content with the status quo. We're constantly
+                    exploring new technologies, techniques, and trends to stay
+                    ahead of the curve and deliver cutting-edge solutions.
+                  </p>
+                </div>
+                <div className="py-2">
+                  <h2 className="gradient-text text-xl font-bold">
+                    Quality Assurance:
+                  </h2>
+                  <p className="gradient-text text-justify">
+                    We hold ourselves to the highest standards of quality and
+                    excellence, ensuring that every project we undertake is
+                    executed with precision and attention to detail.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <Team></Team>
+      <div>
+        <div className="py-4">
+          <h2 className="gradient-text text-3xl font-bold text-center">Get in Touch:</h2>
+          <p className="gradient-text text-justify">
+            Ready to embark on a digital journey with us? Whether you're a
+            business looking to elevate your online presence or an individual
+            with a bold idea, we'd love to hear from you. Get in touch today and
+            let's create something extraordinary together.
+          </p>
         </div>
       </div>
     </div>
