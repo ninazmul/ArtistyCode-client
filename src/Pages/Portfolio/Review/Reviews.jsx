@@ -1,5 +1,5 @@
 
-import ReviewCart from "./ReviewCart";
+import ReviewSCart from "./ReviewSCart";
 import useReviews from "../useReviews";
 import Pagination from "./Pagination";
 
@@ -17,7 +17,7 @@ const Reviews = ({ currentPage, onPageChange }) => {
     <div className="pt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {paginatedReviews.map((review) => (
-          <ReviewCart key={review.id} review={review} />
+          <ReviewSCart key={review.id} review={review} />
         ))}
       </div>
       {/* Pagination controls */}

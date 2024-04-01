@@ -20,10 +20,10 @@ const ReviewSCart = ({ review }) => {
 
   return (
     <div>
-      <div className="card w-72 h-64 glass">
-        <figure className="h-3/5">
+      <div className="card w-72 h-64 glass service_glow m-4">
+        <figure className="h-3/5 p-2">
           {image && <img src={image} alt="Review" />}
-          {reviewText && <p>{reviewText}</p>}
+          {reviewText && <p className="gradient-text">{reviewText}</p>}
         </figure>
 
         <div className="card-body">

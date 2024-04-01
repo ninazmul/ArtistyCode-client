@@ -21,10 +21,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "service_lu6mcpw",
-        "template_vtjc662",
+        "service_v4nkhsb",
+        "template_36lxbgr",
         form.current,
-        "zI5ie0ibLaamw9QaF"
+        "CuXFGhSg8ciyUNigF"
       )
       .then(
         (result) => {
@@ -45,7 +45,49 @@ export const ContactUs = () => {
 
   return (
     <div className="py-4 flex flex-col items-center justify-center">
-      <div className="flex justify-center pb-4">
+      <div>
+        <div className="flex justify-center pb-4">
+          <h1
+            data-aos="fade-up"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text"
+          >
+            Contact Us
+          </h1>
+        </div>
+        <div>
+          <p className="gradient-text text-justify">
+            Thank you for considering ArtistyCode Studio for your digital needs.
+            We're excited to connect with you and explore how we can bring your
+            vision to life. Here's how you can reach out to us:
+          </p>
+          <div className="py-2">
+            <h2 className="gradient-text text-xl font-bold">Address:</h2>
+            <p className="gradient-text">
+              N.I. Nazmul's Home, A-1/9, Dainkini, Chandra, Kaliakair, Gazipur.
+            </p>
+          </div>
+          <div className="py-2">
+            <h2 className="gradient-text text-xl font-bold">Phone:</h2>
+            <p className="gradient-text">+8801580845746.</p>
+          </div>
+          <div className="py-2">
+            <h2 className="gradient-text text-xl font-bold">Email:</h2>
+            <p className="gradient-text">artistycodestudio@gmail.com.</p>
+          </div>
+          <div className="py-2">
+            <p className="gradient-text text-justify">
+              Feel free to use the form below to send us a message directly.
+              Whether you have a question about our services, want to discuss a
+              potential project, or simply want to say hello, we're here to
+              help. We strive to respond to all inquiries promptly.
+            </p>
+            <p className="gradient-text py-2">
+              ArtistyCode Studio Team.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center py-4">
         <h1
           data-aos="fade-up"
           className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700"

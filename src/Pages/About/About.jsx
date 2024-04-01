@@ -6,7 +6,7 @@ import { FaDownload } from "react-icons/fa";
 import Slider from "../Home/Slider";
 import acLogo from "/src/assets/Ac logo white text.webp";
 
-import img from "/src/assets/my/1694098009329.webp";
+import img from "../../assets/my/Untitled design.webp";
 import { Link } from "react-router-dom";
 const About = () => {
   useEffect(() => {

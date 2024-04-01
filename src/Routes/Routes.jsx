@@ -21,6 +21,8 @@ import AddReview from "../Layout/AddReview";
 import UpdateReview from "../Layout/UpdateReview";
 import AllReviews from "../Layout/AllReviews";
 import Reviews from "../Pages/Portfolio/Review/Reviews";
+import ContactUs from "../Pages/Contact/ContactUs";
+import Projects from "../Pages/Home/Projects";
 
 const routes = createBrowserRouter([
   {
@@ -39,6 +41,14 @@ const routes = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs></ContactUs>,
+      },
+      {
+        path: "/projects",
+        element: <Projects></Projects>,
       },
       {
         path: "/portfolio",

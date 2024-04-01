@@ -93,13 +93,11 @@ const AddItems = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-4xl font-bold text-center">
             Add Product to{" "}
-            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
-            's Portfolio!
+            <span className="text-purple-700 gradient-text">ArtistyCode Studio</span>!
           </h1>
           <p className="py-6">
             Fill in the details below to add a new product to{" "}
-            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>'s
-            portfolio.
+            <span className="text-purple-700 gradient-text">ArtistyCode Studio</span>.
           </p>
         </div>
         <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
@@ -122,20 +120,14 @@ const AddItems = () => {
                 >
                   Select niche
                 </option>
-                <option className="text-purple-700 gradient-text" value="Voice">
-                  Voice
+                <option className="text-purple-700 " value="Unique">
+                  Unique
                 </option>
-                <option
-                  className="text-purple-700 gradient-text"
-                  value="Graphics"
-                >
-                  Graphics
+                <option className="text-purple-700 " value="Template">
+                  Template
                 </option>
-                <option
-                  className="text-purple-700 gradient-text"
-                  value="Programming"
-                >
-                  Programming
+                <option className="text-purple-700 " value="Working">
+                  Working
                 </option>
               </select>
             </div>
@@ -158,13 +150,13 @@ const AddItems = () => {
                 >
                   Select category
                 </option>
-                <option className="text-purple-700 gradient-text" value="video">
+                <option className="text-purple-700 " value="video">
                   Video
                 </option>
-                <option className="text-purple-700 gradient-text" value="image">
+                <option className="text-purple-700 " value="image">
                   Image
                 </option>
-                <option className="text-purple-700 gradient-text" value="audio">
+                <option className="text-purple-700 " value="audio">
                   Audio
                 </option>
               </select>

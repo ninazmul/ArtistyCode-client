@@ -2,7 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Navbar from "../Pages/Navbar/Navbar";
 import Footer from "../Pages/Navbar/Footer";
 import { useEffect, useState } from "react";
-import { Audio } from "react-loader-spinner";
+import { ThreeCircles } from "react-loader-spinner";
 import ScrollUpButton from "react-scroll-up-button";
 import { useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -54,7 +54,7 @@ const Root = () => {
       },
       particles: {
         color: {
-          value: ["#2200ff", "#8e00fb"],
+          value: ["#0062ff75", "#00e5ff"],
         },
         links: {
           color: "#9067f6ab",
@@ -69,7 +69,7 @@ const Root = () => {
           outModes: {
             default: "bounce",
           },
-          random: false,
+          random: true,
           speed: 1,
           straight: false,
         },
@@ -83,12 +83,13 @@ const Root = () => {
           value: 0.5,
         },
         shape: {
-          type: "circle",
+          type: "square",
         },
         size: {
           value: { min: 1, max: 5 },
         },
       },
+      preset: "bigCircles",
       detectRetina: true,
     }),
     []
@@ -112,16 +113,16 @@ const Root = () => {
         />
       )}
       {!init && (
-        <div className="absolute inset-0 bg-white z-20">
+        <div className="absolute inset-0 bg-blue-300 z-20">
           <div className="absolute inset-0 top-52 flex justify-center">
-            <Audio
-              height="80"
-              width="80"
-              radius="9"
-              color="orange"
-              ariaLabel="loading"
-              wrapperStyle
-              wrapperClass
+            <ThreeCircles
+              visible={true}
+              height="100"
+              width="100"
+              color="#8e00fb"
+              ariaLabel="three-circles-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
             />
           </div>
         </div>

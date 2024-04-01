@@ -44,71 +44,53 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="dropdown dropdown-right md:hidden">
+      <div className="dropdown dropdown-right lg:hidden">
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-outline text-purple-700 gradient-text text-xl m-1"
+          className="btn btn-outline outline-2 text-purple-700 text-xl m-1"
         >
           <CiMenuBurger />
         </div>
         <ul
           tabIndex={0}
-          className="dropdown-content z-[1] menu p-2 shadow bg-purple-700 rounded-box w-52 text-lg"
+          className="dropdown-content z-[1] menu p-2 shadow gradient-background rounded-box w-64 text-lg"
         >
           {isAdmin ? (
             <>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/AdminHome"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/AdminHome">
                   <MdAdminPanelSettings />
                   Admin Home
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/users"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/users">
                   <MdManageAccounts />
                   Manage User's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/add"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/add">
                   <IoMdAdd />
                   Add Item's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/allItems"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/allItems">
                   <SiNginxproxymanager />
                   Manage Item's
                 </ActiveLink2>
               </li>
 
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/addReview"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/addReview">
                   <RiUserStarLine />
                   Add Review's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/allReviews"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/allReviews">
                   <GiStarsStack />
                   Manage Review's
                 </ActiveLink2>
@@ -117,28 +99,19 @@ const Navbar = () => {
                 <p className="border-t border-gray-300 my-4"></p>
               </div>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/"
-                >
+                <ActiveLink2 className="p-2" to="/">
                   <FaHome />
                   Home
                 </ActiveLink2>
               </li>
               <li>
                 {isSignedIn ? (
-                  <Link
-                    onClick={handleSignOut}
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link onClick={handleSignOut} className="p-2">
                     <FaSignOutAlt />
                     SignOut
                   </Link>
                 ) : (
-                  <Link
-                    to="/signIn"
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link to="/signIn" className="p-2">
                     <FaSignInAlt />
                     SignIn
                   </Link>
@@ -149,10 +122,7 @@ const Navbar = () => {
             <>
               {" "}
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/userHome"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/userHome">
                   <FaUserCheck />
                   User Home
                 </ActiveLink2>
@@ -161,28 +131,19 @@ const Navbar = () => {
                 <p className="border-t border-gray-300 my-4"></p>
               </div>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/"
-                >
+                <ActiveLink2 className="p-2" to="/">
                   <FaHome />
                   Home
                 </ActiveLink2>
               </li>
               <li>
                 {isSignedIn ? (
-                  <Link
-                    onClick={handleSignOut}
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link onClick={handleSignOut} className="p-2">
                     <FaSignOutAlt />
                     SignOut
                   </Link>
                 ) : (
-                  <Link
-                    to="/signIn"
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link to="/signIn" className="p-2">
                     <FaSignInAlt />
                     SignIn
                   </Link>
@@ -192,61 +153,43 @@ const Navbar = () => {
           )}
         </ul>
       </div>
-      <div className="hidden md:flex w-1/6 md:w-1/5 min-h-full bg-purple-700 fixed z-50 overflow-y-auto">
+      <div className="hidden lg:flex w-1/6 lg:w-1/5 min-h-full gradient-background fixed z-50 overflow-y-auto">
         <ul className="menu text-xl font-bold">
           {isAdmin ? (
             <>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/AdminHome"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/AdminHome">
                   <MdAdminPanelSettings />
                   Admin Home
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/users"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/users">
                   <MdManageAccounts />
                   Manage User's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/add"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/add">
                   <IoMdAdd />
                   Add Item's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/allItems"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/allItems">
                   <SiNginxproxymanager />
                   Manage Item's
                 </ActiveLink2>
               </li>
 
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/addReview"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/addReview">
                   <RiUserStarLine />
                   Add Review's
                 </ActiveLink2>
               </li>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/allReviews"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/allReviews">
                   <GiStarsStack />
                   Manage Review's
                 </ActiveLink2>
@@ -255,28 +198,19 @@ const Navbar = () => {
                 <p className="border-t border-gray-300 my-4"></p>
               </div>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/"
-                >
+                <ActiveLink2 className="p-2" to="/">
                   <FaHome />
                   Home
                 </ActiveLink2>
               </li>
               <li>
                 {isSignedIn ? (
-                  <Link
-                    onClick={handleSignOut}
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link onClick={handleSignOut} className="p-2">
                     <FaSignOutAlt />
                     SignOut
                   </Link>
                 ) : (
-                  <Link
-                    to="/signIn"
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link to="/signIn" className="p-2">
                     <FaSignInAlt />
                     SignIn
                   </Link>
@@ -287,10 +221,7 @@ const Navbar = () => {
             <>
               {" "}
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/dashboard/userHome"
-                >
+                <ActiveLink2 className="p-2" to="/dashboard/userHome">
                   <FaUserCheck />
                   User Home
                 </ActiveLink2>
@@ -299,28 +230,19 @@ const Navbar = () => {
                 <p className="border-t border-gray-300 my-4"></p>
               </div>
               <li>
-                <ActiveLink2
-                  className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  to="/"
-                >
+                <ActiveLink2 className="p-2" to="/">
                   <FaHome />
                   Home
                 </ActiveLink2>
               </li>
               <li>
                 {isSignedIn ? (
-                  <Link
-                    onClick={handleSignOut}
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link onClick={handleSignOut} className="p-2">
                     <FaSignOutAlt />
                     SignOut
                   </Link>
                 ) : (
-                  <Link
-                    to="/signIn"
-                    className="p-2 hover:text-orange-800 hover:bg-wheat"
-                  >
+                  <Link to="/signIn" className="p-2">
                     <FaSignInAlt />
                     SignIn
                   </Link>
@@ -360,13 +282,13 @@ const ContentArea = () => {
 // Dashboard component
 const Dashboard = () => {
   return (
-    <div className="md:flex h-screen">
+    <div className="lg:flex h-screen">
       {/* Render Navbar component */}
-      <div className="md:w-1/5">
+      <div className="lg:w-1/5">
         <Navbar />
       </div>
       {/* Render ContentArea component */}
-      <div className="md:w-4/5">
+      <div className="lg:w-4/5">
         <ContentArea />
       </div>
     </div>

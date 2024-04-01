@@ -37,19 +37,23 @@ const Navbar = () => {
         <li>Home </li>
       </ActiveLink>
 
+      <ActiveLink spy="true" smooth="true" to="/portfolio">
+        <li>Projects</li>
+      </ActiveLink>
+
       <ActiveLink spy="true" smooth="true" to="/about">
         <li>About Us</li>
       </ActiveLink>
 
-      <ActiveLink spy="true" smooth="true" to="/portfolio">
-        <li>Project Gallery </li>
+      <ActiveLink spy="true" smooth="true" to="/contact">
+        <li>Contact Us</li>
       </ActiveLink>
     </ul>
   );
 
   return (
-    <div>
-      <div className="navbar fixed z-30 glass">
+    <div className="flex justify-center p-2">
+      <div className="navbar fixed z-30 glass rounded-full w-11/12 px-4">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -70,7 +74,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow glass bg-blue-500 text-purple-700 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow glass gradient-background text-white rounded-box w-52"
             >
               {navBtn}
             </ul>
@@ -84,7 +88,9 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex transition">
-          <ul className="menu menu-horizontal px-4 border-2 rounded-full border-blue-700 bg-blue-500/20">{navBtn}</ul>
+          <ul className="menu menu-horizontal px-4 border-2 rounded-full border-blue-700 bg-blue-500/20">
+            {navBtn}
+          </ul>
         </div>
         <div className="navbar-end gap-2">
           <div className="dropdown dropdown-end">
@@ -109,19 +115,19 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-700 rounded-box min-w-full w-auto  gap-4"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-purple-700 rounded-box min-w-full w-auto  gap-4 gradient-background"
             >
               <li>
                 <NavLink to="/dashboard">
                   {user?.displayName && (
-                    <p className="justify-between hover:text-purple-700 gradient-text transition text-2xl cursor-pointer">
+                    <p className="justify-between text-white transition text-2xl cursor-pointer">
                       {user.displayName}
                     </p>
                   )}
                 </NavLink>
 
                 {user?.email && (
-                  <p className="justify-between hover:text-purple-700 gradient-text transition cursor-pointer">
+                  <p className="justify-between text-white transition cursor-pointer">
                     {user.email}
                   </p>
                 )}
@@ -131,18 +137,14 @@ const Navbar = () => {
                 <NavLink className="">
                   <button
                     onClick={handleSignOut}
-                    data-aos="fade-right"
-                    className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-white text-orange-50 w-52 rounded-lg p-2 uppercase relative overflow-hidden text-center"
+                    className="neno-button font-bold border-2 border-white text-white w-52 rounded-lg p-2 uppercase relative overflow-hidden text-center"
                   >
                     SignOut
                   </button>
                 </NavLink>
               ) : (
                 <NavLink to="/signIn" className="">
-                  <button
-                    data-aos="fade-right"
-                    className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-wheat rounded-lg p-2 uppercase relative overflow-hidden text-center w-40"
-                  >
+                  <button className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-wheat text-white rounded-lg p-2 uppercase relative overflow-hidden text-center w-40">
                     SignIn
                   </button>
                 </NavLink>
@@ -152,17 +154,17 @@ const Navbar = () => {
           <button className="flex items-center">
             <div className="chat chat-start hidden md:flex">
               <ReactWhatsapp
-                className="chat-bubble bg-gradient-to-r from-purple-700 to-blue-700 text-white text-xl font-bold w-52 flex items-center justify-between neno-button shadow-xl hover:shadow-purple-800/50"
+                className="rounded-full px-4 py-2 bg-gradient-to-r from-purple-700 to-blue-700 text-white text-xl font-bold w-44 flex items-center justify-between neno-button shadow-xl hover:shadow-purple-800/50"
                 number="+8801580845746"
                 message="As-salamu alaykum. I'm interested in learning more about your services."
               >
-                Contact Us
-                <IoLogoWhatsapp size={24} />
+                WhatsApp
+                <IoLogoWhatsapp size={30} />
               </ReactWhatsapp>
             </div>
             <div className=" md:hidden">
               <ReactWhatsapp
-                className=" text-4xl text-purple-700 gradient-text shadow-xl hover:shadow-purple-800/50"
+                className=" text-4xl text-purple-700  rounded-full p-1 hover:shadow-xl hover:shadow-purple-800/50"
                 number="+8801580845746"
                 message="As-salamu alaykum. I'm interested in learning more about your services."
               >

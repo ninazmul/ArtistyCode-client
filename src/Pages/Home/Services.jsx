@@ -1,10 +1,3 @@
-import { FaCode } from "react-icons/fa";
-import { MdSettingsVoice } from "react-icons/md";
-import { SiTaichigraphics } from "react-icons/si";
-import { MdCoPresent } from "react-icons/md";
-import { TfiWrite } from "react-icons/tfi";
-import { TbBusinessplan } from "react-icons/tb";
-
 import { useRef, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -62,171 +55,26 @@ const Services = () => {
   return (
     <div className="py-4 md:py-10" data-aos="fade-up">
       <div className="flex justify-center py-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700">
-          All Services
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg gradient-text uppercase px-4 border-purple-700">
+          Our Services
         </h1>
       </div>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
+          <div className="h-full px-4 py-4">
+            <div className="card glass h-64 service_glow">
               <div className="card-body">
-                <h2 className="card-title">Explore our web solutions:</h2>
-                <p className="text-xs">
-                  Static, Dynamic, or E-commerce websites tailored to your
-                  needs. From sleek designs to seamless functionality, we've got
-                  you covered.
+                <h2 className="card-title gradient-text">
+                  Dynamic Web Solutions with MERN:
+                </h2>
+                <p className="text-xs gradient-text">
+                  Create dynamic web applications and real-time experiences with
+                  our MERN stack expertise, utilizing MongoDB, Express.js,
+                  React.js, and Node.js for innovation-driven solutions.
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
-                    onClick={() =>
-                      document.getElementById("my_modal_1").showModal()
-                    }
-                  >
-                    Learn more!
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="">
-              <dialog
-                id="my_modal_1"
-                className="modal modal-bottom sm:modal-middle"
-              >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">Services Offered:</span>
-                    <br />{" "}
-                    <span className="font-bold underline">
-                      Static Website $105:
-                    </span>{" "}
-                    <br /> 1. Clean and modern design. <br /> 2. Responsive
-                    layout for all devices. <br /> 3. Fast loading times. <br />
-                    <span className="font-bold underline">
-                      Dynamic Website $350:
-                    </span>{" "}
-                    <br /> 1. Interactive and dynamic user interface. <br /> 2.
-                    Seamless navigation. <br /> 3. Customized features tailored
-                    to your needs. <br />
-                    <span className="font-bold underline">
-                      E-commerce Website $995:
-                    </span>{" "}
-                    <br />
-                    1. Fully functional online store. <br /> 2. Secure payment
-                    gateways.
-                    <br /> 3. Inventory management and order tracking.
-                  </p>
-                  <div className="modal-action">
-                    <form method="dialog">
-                      {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
-                        Close
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-            </div>
-          </div>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
-              <div className="card-body">
-                <h2 className="card-title">Voice-Over & Dubbing Services:</h2>
-                <p className="text-xs">
-                  Captivating voice-overs in Bengali, Hindi, and English.
-                  Seamless dubbing for films and TV. Script adaptation and
-                  translation. Quick turnaround and quality assurance
-                  guaranteed.
-                </p>
-                <div className="card-actions justify-end">
-                  <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
-                    onClick={() =>
-                      document.getElementById("my_modal_2").showModal()
-                    }
-                  >
-                    Learn more!
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="">
-              <dialog
-                id="my_modal_2"
-                className="modal modal-bottom sm:modal-middle"
-              >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">Services Offered:</span>
-                    <br />{" "}
-                    <span className="font-bold underline">
-                      Voice Over in Bengali, Hindi, and English $1/min:
-                    </span>{" "}
-                    <br />
-                    1. Delivering captivating and expressive voice-overs for a
-                    variety of projects, including commercials, documentaries,
-                    e-learning modules, animations, and more. <br /> 2.
-                    Customizing tone, pace, and style to suit the unique
-                    requirements of each project.
-                    <br />
-                    <span className="font-bold underline">
-                      Dubbing Services $2/min:
-                    </span>{" "}
-                    <br />
-                    1. Providing seamless dubbing services to synchronize voices
-                    with on-screen characters for films, TV shows, and video
-                    content. <br /> 2. Ensuring high-quality lip-syncing and
-                    natural flow for an authentic viewing experience. <br />{" "}
-                    <span className="font-bold underline">
-                      Script Adaptation and Translation $5/500
-                      <span className="text-xs">Words</span>:
-                    </span>{" "}
-                    <br /> 1. Assisting with script adaptation and translation
-                    to maintain cultural nuances and linguistic accuracy. <br />{" "}
-                    2. Offering bilingual capabilities to cater to diverse
-                    language preferences. <br />
-                    <span className="font-bold underline">
-                      Quick Turnaround:
-                    </span>{" "}
-                    <br /> 1. Meeting tight deadlines with a commitment to swift
-                    delivery without compromising on quality. <br /> 2.
-                    Efficient project management to ensure timely completion.{" "}
-                    <br />
-                    <span className="font-bold underline">
-                      Quality Assurance:
-                    </span>{" "}
-                    <br /> 1. Utilizing professional recording equipment and
-                    studios for crystal-clear audio quality. <br /> 2. Regular
-                    quality checks and revisions to meet client expectations.{" "}
-                  </p>
-                  <div className="modal-action">
-                    <form method="dialog">
-                      {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
-                        Close
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-            </div>
-          </div>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
-              <div className="card-body">
-                <h2 className="card-title">Creative Design Solutions:</h2>
-                <p className="text-xs">
-                  Crafting memorable logos, cohesive branding collateral,
-                  eye-catching print and digital designs, creative packaging
-                  solutions, and custom illustrations tailored to your brand's
-                  identity and vision.
-                </p>
-                <div className="card-actions justify-end">
-                  <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
                       document.getElementById("my_modal_3").showModal()
                     }
@@ -241,53 +89,52 @@ const Services = () => {
                 id="my_modal_3"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">
-                      Services Offered $10:
-                    </span>
-                    <br />
-                    <span className="font-bold underline">
-                      Logo Design:
-                    </span>{" "}
-                    <br />
-                    1. Craft a memorable and impactful logo that reflects your
-                    brand's essence. <br /> 2. Multiple design concepts to
-                    choose from.
-                    <br /> 3. Revisions until you're completely satisfied.{" "}
-                    <br />
-                    <span className="font-bold underline">
-                      Branding Collateral:
-                    </span>{" "}
-                    <br />
-                    1. Design of business cards, letterheads, and other
-                    essential branding materials. <br /> 2. Consistent and
-                    cohesive branding across all touchpoints. <br />{" "}
-                    <span className="font-bold underline">
-                      Print Design:
-                    </span>{" "}
-                    <br /> 1. Eye-catching posters, brochures, flyers, and
-                    promotional materials. <br /> 2. High-resolution,
-                    print-ready files for professional results. <br />
-                    <span className="font-bold underline">
-                      Digital Graphics:
-                    </span>{" "}
-                    <br /> 1. Social media graphics for a strong online
-                    presence. <br /> 2. Web banners, email signatures, and other
-                    digital assets. <br />
-                    <span className="font-bold underline">
-                      Packaging Design:
-                    </span>{" "}
-                    <br /> 1. Creative and effective packaging solutions for
-                    your products. <br /> 2. Stand out on the shelves with
-                    unique and compelling packaging. <br />
-                    <span className="font-bold underline">
-                      Illustrations:
-                    </span>{" "}
-                    <br /> 1. Custom illustrations to add a personal touch to
-                    your projects. <br /> 2. Digital or hand-drawn illustrations
-                    based on your preferences.
+                <div className="modal-box glass card_glow">
+                  <h2 className="font-bold text-lg gradient-text">
+                    As-salamu alaykum!
+                  </h2>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Custom Web Applications:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    We specialize in building dynamic and scalable web
+                    applications using the MERN (MongoDB, Express.js, React.js,
+                    Node.js) stack, ensuring high performance and seamless user
+                    experiences.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    API Development:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Our expertise extends to developing robust APIs with Node.js
+                    and Express.js, enabling seamless integration of your web
+                    application with external systems and services.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Real-Time Communication:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Harness the power of WebSocket technology to enable
+                    real-time communication features in your MERN stack
+                    application, ensuring instantaneous updates and
+                    interactions.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Progressive Web Apps (PWAs):
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Elevate your web presence with Progressive Web Apps
+                    developed using React.js, providing an app-like experience
+                    to users across devices while leveraging web technologies.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Data Visualization:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Unlock valuable insights from your data with interactive and
+                    visually appealing data visualization solutions built using
+                    libraries like D3.js and Chart.js within your MERN stack
+                    application.
                   </p>
                   <div className="modal-action">
                     <form method="dialog">
@@ -301,21 +148,23 @@ const Services = () => {
               </dialog>
             </div>
           </div>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
+          <div className="h-full px-4 py-4">
+            <div className="card glass h-64 service_glow">
               <div className="card-body">
-                <h2 className="card-title"> Dynamic Visual Solutions:</h2>
-                <p className="text-xs">
-                  Elevate your brand with captivating videos. Whether it's
-                  charismatic Spokesperson Videos, customizable Green Screen
-                  Services, or engaging Promotional Videos, we deliver dynamic
-                  solutions to captivate your audience and boost your message.
+                <h2 className="card-title gradient-text">
+                  Powering Your Web Presence with PHP:
+                </h2>
+                <p className="text-xs gradient-text">
+                  Unlock the potential of PHP for your website needs, from
+                  custom content management systems to e-commerce solutions,
+                  delivering robust and scalable platforms tailored to your
+                  requirements.
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
-                      document.getElementById("my_modal_4").showModal()
+                      document.getElementById("my_modal_2").showModal()
                     }
                   >
                     Learn more!
@@ -325,31 +174,52 @@ const Services = () => {
             </div>
             <div className="">
               <dialog
-                id="my_modal_4"
+                id="my_modal_2"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">Services Offered:</span>
-                    <br />
-                    <span className="font-bold underline">
-                      Spokesperson Videos $5/min:
-                    </span>{" "}
-                    <br />
-                    Engage your audience with a charismatic presenter delivering
-                    your message. <br />
-                    <span className="font-bold underline">
-                      Green Screen Services $10/min:
-                    </span>{" "}
-                    <br /> Elevate your visuals with our professional studio and
-                    customizable backgrounds. <br />
-                    <span className="font-bold underline">
-                      Promotional Videos $50/min:
-                    </span>{" "}
-                    <br />
-                    Boost your brand with captivating promotional content
-                    integrated seamlessly into your presentations.
+                <div className="modal-box glass card_glow">
+                  <h2 className="font-bold text-lg gradient-text">
+                    As-salamu alaykum!
+                  </h2>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Custom PHP Solutions:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    From dynamic websites to robust web applications, we
+                    leverage PHP's versatility to deliver tailored solutions
+                    that meet your unique requirements.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Content Management Systems (CMS):
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Harness the power of popular CMS platforms like WordPress,
+                    Joomla, and Drupal to easily manage and update your website
+                    content without extensive technical knowledge.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    E-commerce Websites:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Create seamless online shopping experiences with custom PHP
+                    e-commerce solutions, integrating secure payment gateways,
+                    inventory management, and order processing functionalities.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    PHP Frameworks:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Utilize powerful PHP frameworks such as Laravel, Symfony,
+                    and CodeIgniter to streamline development, enhance security,
+                    and ensure scalability of your web application.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Database Integration:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Integrate MySQL or other relational databases seamlessly
+                    with your PHP-based website to efficiently manage and
+                    retrieve data, ensuring optimal performance and reliability.
                   </p>
                   <div className="modal-action">
                     <form method="dialog">
@@ -363,20 +233,22 @@ const Services = () => {
               </dialog>
             </div>
           </div>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
+          <div className="h-full px-4 py-4">
+            <div className="card glass h-64 service_glow">
               <div className="card-body">
-                <h2 className="card-title"> Linguistic Solutions:</h2>
-                <p className="text-xs">
-                  We specialize in precise Bengali to English translations and
-                  seamless subtitle integration for videos. Our services ensure
-                  effective communication and engagement with your audience.
+                <h2 className="card-title gradient-text">
+                  Tailored WordPress Solutions for Success
+                </h2>
+                <p className="text-xs gradient-text">
+                  Stand out online with custom WordPress themes and plugins,
+                  optimized for SEO and mobile responsiveness, ensuring your
+                  digital presence leaves a lasting impression.
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
+                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
-                      document.getElementById("my_modal_5").showModal()
+                      document.getElementById("my_modal_3").showModal()
                     }
                   >
                     Learn more!
@@ -386,124 +258,58 @@ const Services = () => {
             </div>
             <div className="">
               <dialog
-                id="my_modal_5"
+                id="my_modal_3"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">Services Offered:</span>
-                    <br />
-                    <span className="font-bold underline">
-                      Translation Services: $5/500
-                      <span className="text-xs">Words</span>:
-                    </span>{" "}
-                    <br />
-                    My translation service specializes in providing accurate and
-                    culturally nuanced translations between Bengali and English.
-                    I guarantee translations that resonate effectively with your
-                    target audience. <br />
-                    <span className="font-bold underline">
-                      Subtitle Integration $5/500
-                      <span className="text-xs">Words</span>:
-                    </span>{" "}
-                    <br /> I excel in providing comprehensive subtitle services
-                    for your videos. This includes expertly integrating
-                    subtitles, ensuring perfect synchronization with the audio,
-                    and delivering a visually appealing format. My focus is on
-                    delivering a seamless and professional subtitle experience
-                    for your content.
+                <div className="modal-box glass card_glow">
+                  <h2 className="font-bold text-lg gradient-text">
+                    As-salamu alaykum!
+                  </h2>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Custom WordPress Themes:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Stand out from the crowd with bespoke WordPress themes
+                    tailored to your brand identity and specific requirements,
+                    ensuring a unique and memorable online presence.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Plugin Development:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Extend the functionality of your WordPress website with
+                    custom plugins developed to address your unique needs,
+                    enhancing usability and user experience.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Responsive Design:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Ensure your WordPress website looks and functions flawlessly
+                    across devices with responsive design techniques, catering
+                    to the increasing number of mobile users.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    SEO Optimization:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Boost your visibility in search engine rankings and attract
+                    more organic traffic with WordPress SEO optimization,
+                    including keyword optimization, meta tags, and site speed
+                    enhancements.
+                  </p>
+                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                    Website Maintenance:
+                  </h3>
+                  <p className=" text-justify gradient-text">
+                    Keep your WordPress website secure and up-to-date with
+                    regular maintenance services, including software updates,
+                    security patches, and backups, to ensure optimal performance
+                    and reliability.
                   </p>
                   <div className="modal-action">
                     <form method="dialog">
                       {/* if there is a button in form, it will close the modal */}
-                      <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
-                        Close
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </dialog>
-            </div>
-          </div>
-          <div className="h-full px-2">
-            <div className="card glass h-64">
-              <div className="card-body">
-                <h2 className="card-title">Digital Solutions Suite:</h2>
-                <p className="text-xs">
-                  Our digital services cover everything you need for online
-                  success. From websites to branding, videos, and ongoing
-                  support, we've got you covered. Boost your business with our
-                  strategic marketing solutions.
-                </p>
-                <div className="card-actions justify-end">
-                  <button
-                    className="neno-button btn btn-outline font-bold shadow-xl hover:shadow-purple-700/50 border-2 text-white hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center "
-                    onClick={() =>
-                      document.getElementById("my_modal_6").showModal()
-                    }
-                  >
-                    Learn more!
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div className="">
-              <dialog
-                id="my_modal_6"
-                className="modal modal-bottom sm:modal-middle"
-              >
-                <div className="modal-box glass">
-                  <h3 className="font-bold text-lg">As-salamu alaykum!</h3>
-                  <p className="py-4 text-start">
-                    <span className="font-bold text-xl">Services Offered:</span>
-                    <br />
-                    <span className="font-bold underline">
-                      Website Creation:
-                    </span>{" "}
-                    <br />
-                    I bring your vision to life with captivating and functional
-                    websites. My expertise ensures that your online presence is
-                    not just a website but a dynamic platform that engages and
-                    converts visitors into customers. <br />
-                    <span className="font-bold underline">
-                      Logo and Branding Graphics:
-                    </span>{" "}
-                    <br /> Make a lasting impression with a unique and memorable
-                    brand identity. I design logos and branding graphics,
-                    including banners, covers, and social media posts, that
-                    capture the essence of your business and resonate with your
-                    target audience. <br />
-                    <span className="font-bold underline">
-                      Promotional and Product Review Videos:
-                    </span>{" "}
-                    <br />
-                    Elevate your brand with compelling video content. From
-                    engaging promotional videos that tell your brand story to
-                    detailed product review videos that build trust, I create
-                    content that leaves a lasting impact.
-                    <br />
-                    <span className="font-bold underline">
-                      Website and Business Maintenance:
-                    </span>{" "}
-                    <br />
-                    My commitment doesn’t end with the launch of your website. I
-                    provide ongoing maintenance to ensure your online platform
-                    is secure, up-to-date, and optimized for performance. Focus
-                    on your core operations while I handle the technicalities.
-                    <br />
-                    <span className="font-bold underline">
-                      Business Boost and Promotion:
-                    </span>{" "}
-                    <br />
-                    Amplify your reach and impact with my strategic business
-                    boosting and promotion services. From targeted marketing
-                    campaigns to social media strategies, I ensure your business
-                    gets the attention it deserves.
-                  </p>
-                  <div className="modal-action">
-                    <form method="dialog">
                       <button className="btn btn-outline text-white neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-2xl uppercase relative overflow-hidden text-center">
                         Close
                       </button>

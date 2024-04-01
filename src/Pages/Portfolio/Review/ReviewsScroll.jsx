@@ -85,7 +85,7 @@ const ReviewsScroll = () => {
         </div>
       </div>
       <Link to="/dashboard/addReview" className="flex justify-center">
-        <button className="btn btn-outline m-4 border-t-0 border-x-0 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg uppercase relative overflow-hidden text-center font-extrabold text-white">
+        <button className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white">
           Give Review
         </button>
       </Link>

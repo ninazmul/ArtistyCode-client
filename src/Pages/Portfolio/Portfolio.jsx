@@ -17,11 +17,11 @@ const Portfolio = () => {
     (a, b) => new Date(b.createdDate) - new Date(a.createdDate)
   );
 
-  const programming = sortedItems.filter(
-    (item) => item.niche === "Programming"
+  const Unique = sortedItems.filter(
+    (item) => item.niche === "Unique"
   );
-  const voice = sortedItems.filter((item) => item.niche === "Voice");
-  const graphics = sortedItems.filter((item) => item.niche === "Graphics");
+  const Template = sortedItems.filter((item) => item.niche === "Template");
+  const Working = sortedItems.filter((item) => item.niche === "Working");
 
   const getPageItems = (items) => {
     const startIndex = (currentPage - 1) * itemsPerPage;
@@ -33,12 +33,12 @@ const Portfolio = () => {
 
   for (
     let i = 0;
-    i < Math.max(programming.length, voice.length, graphics.length);
+    i < Math.max(Unique.length, Template.length, Working.length);
     i++
   ) {
-    if (programming[i]) allItemsInSequence.push(programming[i]);
-    if (voice[i]) allItemsInSequence.push(voice[i]);
-    if (graphics[i]) allItemsInSequence.push(graphics[i]);
+    if (Unique[i]) allItemsInSequence.push(Unique[i]);
+    if (Template[i]) allItemsInSequence.push(Template[i]);
+    if (Working[i]) allItemsInSequence.push(Working[i]);
   }
 
   const handlePageChange = (selectedPage) => {
@@ -50,13 +50,13 @@ const Portfolio = () => {
     setSearchTerm(e.target.value);
   };
 
-  const filteredProgramming = programming.filter((item) =>
+  const filteredUnique = Unique.filter((item) =>
     item.projectName.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  const filteredVoice = voice.filter((item) =>
+  const filteredTemplate = Template.filter((item) =>
     item.projectName.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  const filteredGraphics = graphics.filter((item) =>
+  const filteredWorking = Working.filter((item) =>
     item.projectName.toLowerCase().includes(searchTerm.toLowerCase())
   );
   const filteredAllItemsInSequence = allItemsInSequence.filter((item) =>
@@ -70,9 +70,9 @@ const Portfolio = () => {
           <div className="flex items-center justify-between">
             <div>
               <Tab>All</Tab>
-              <Tab>Programming</Tab>
-              <Tab>Voice</Tab>
-              <Tab>Graphics</Tab>
+              <Tab>Unique Projects</Tab>
+              <Tab>Templates</Tab>
+              <Tab>Working..</Tab>
               <Tab>All Reviews</Tab>
             </div>
             <div>
@@ -115,29 +115,29 @@ const Portfolio = () => {
           />
         </TabPanel>
         <TabPanel>
-          <ItemTab items={getPageItems(filteredProgramming)} />
+          <ItemTab items={getPageItems(filteredUnique)} />
           {/* Pagination controls */}
           <Pagination
             currentPage={currentPage}
-            totalPages={Math.ceil(filteredProgramming.length / itemsPerPage)}
+            totalPages={Math.ceil(filteredUnique.length / itemsPerPage)}
             onPageChange={handlePageChange}
           />
         </TabPanel>
         <TabPanel>
-          <ItemTab items={getPageItems(filteredVoice)} />
+          <ItemTab items={getPageItems(filteredTemplate)} />
           {/* Pagination controls */}
           <Pagination
             currentPage={currentPage}
-            totalPages={Math.ceil(filteredVoice.length / itemsPerPage)}
+            totalPages={Math.ceil(filteredTemplate.length / itemsPerPage)}
             onPageChange={handlePageChange}
           />
         </TabPanel>
         <TabPanel>
-          <ItemTab items={getPageItems(filteredGraphics)} />
+          <ItemTab items={getPageItems(filteredWorking)} />
           {/* Pagination controls */}
           <Pagination
             currentPage={currentPage}
-            totalPages={Math.ceil(filteredGraphics.length / itemsPerPage)}
+            totalPages={Math.ceil(filteredWorking.length / itemsPerPage)}
             onPageChange={handlePageChange}
           />
         </TabPanel>

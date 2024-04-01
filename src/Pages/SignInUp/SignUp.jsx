@@ -109,16 +109,15 @@ const SignUp = () => {
           <h1 className="text-2xl md:text-5xl font-bold">
             Stay Connected with{" "}
             <Link to="/" className="text-purple-700 gradient-text">
-              N.I. Nazmul
-            </Link>
-            's Portfolio!
+              ArtistyCode Studio
+            </Link>!
           </h1>
           <p className="py-6">
             Sign up to gain full access to{" "}
             <Link to="/" className="text-purple-700 gradient-text">
-              N.I. Nazmul
+              ArtistyCode Studio
             </Link>
-            's portfolio and explore a collection of previous works. Join now to
+            's projects and explore a collection of previous works. Join now to
             dive into a showcase of creativity!
           </p>
         </div>

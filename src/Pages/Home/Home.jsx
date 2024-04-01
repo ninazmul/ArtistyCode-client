@@ -1,19 +1,18 @@
-import ContactUs from "../Contact/ContactUs";
-// import ReviewsScroll from "../Portfolio/Review/ReviewsScroll";
+
+import Team from "../Team";
 import AutoScrollReviews from "./AutoScrollReviews";
 import Header from "./Header";
+import Projects from "./Projects";
 import Services from "./Services";
-import Skills from "./Skills/Skills";
 
 const Home = () => {
   return (
     <div>
       <Header></Header>
-      <Skills></Skills>
+      <Team></Team>
       <Services></Services>
+      <Projects></Projects>
       <AutoScrollReviews></AutoScrollReviews>
-      {/* <ReviewsScroll></ReviewsScroll> */}
-      <ContactUs></ContactUs>
     </div>
   );
 };
