@@ -70,9 +70,9 @@ const Portfolio = () => {
           <div className="flex items-center justify-between">
             <div>
               <Tab>All</Tab>
-              <Tab>Unique Projects</Tab>
+              <Tab>Unique</Tab>
               <Tab>Templates</Tab>
-              <Tab>Working..</Tab>
+              <Tab>Working</Tab>
               <Tab>All Reviews</Tab>
             </div>
             <div>

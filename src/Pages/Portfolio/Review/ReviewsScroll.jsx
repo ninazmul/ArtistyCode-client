@@ -24,8 +24,7 @@ const ReviewsScroll = () => {
     autoplay: true,
     swipeToSlide: true,
     focusOnSelect: true,
-    slidesToShow: slidesToShow,
-    rtl: true,
+    slidesToShow: slidesToShow
   };
 
   const updateSlidesToShow = () => {

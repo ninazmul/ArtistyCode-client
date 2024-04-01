@@ -48,7 +48,6 @@ export const ContactUs = () => {
       <div>
         <div className="flex justify-center pb-4">
           <h1
-            data-aos="fade-up"
             className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text"
           >
             Contact Us

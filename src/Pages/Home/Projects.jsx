@@ -7,6 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import useItem from "../Portfolio/useItem";
 import ItemCart from "../Portfolio/ItemCart";
+import Aos from "aos";
 
 const Projects = () => {
     const [item] = useItem();
@@ -57,13 +58,19 @@ const Projects = () => {
         window.removeEventListener("resize", updateSlidesToShow);
       };
     }, []);
+  
+  useEffect(() => {
+    Aos.init({
+      easing: "ease-out-quart",
+      delay: 0,
+      duration: 750,
+    });
+  }, []);
+  
     return (
-      <div>
+      <div data-aos="fade-right">
         <div className="flex justify-center">
-          <h1
-            data-aos="fade-right"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg gradient-text uppercase px-4 border-purple-700"
-          >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg gradient-text uppercase px-4 border-purple-700">
             Our Projects
           </h1>
         </div>
@@ -71,8 +78,7 @@ const Projects = () => {
           <div className="relative">
             <Slider ref={sliderRef} {...settings}>
               {item.map((item) => (
-                  <ItemCart
-                      key={item.id} item={item} />
+                <ItemCart key={item.id} item={item} />
               ))}
             </Slider>
             <div className="absolute top-1/2 left-5 transform -translate-y-1/2 flex space-x-4 z-10">

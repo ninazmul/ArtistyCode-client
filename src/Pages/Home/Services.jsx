@@ -62,7 +62,7 @@ const Services = () => {
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           <div className="h-full px-4 py-4">
-            <div className="card glass h-64 service_glow">
+            <div className="card glass h-72 service_glow">
               <div className="card-body">
                 <h2 className="card-title gradient-text">
                   Dynamic Web Solutions with MERN:
@@ -74,7 +74,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
+                    className="btn btn-outline border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
                       document.getElementById("my_modal_3").showModal()
                     }
@@ -149,7 +149,7 @@ const Services = () => {
             </div>
           </div>
           <div className="h-full px-4 py-4">
-            <div className="card glass h-64 service_glow">
+            <div className="card glass h-72 service_glow">
               <div className="card-body">
                 <h2 className="card-title gradient-text">
                   Powering Your Web Presence with PHP:
@@ -162,7 +162,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
+                    className="btn btn-outline border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
                       document.getElementById("my_modal_2").showModal()
                     }
@@ -234,7 +234,7 @@ const Services = () => {
             </div>
           </div>
           <div className="h-full px-4 py-4">
-            <div className="card glass h-64 service_glow">
+            <div className="card glass h-72 service_glow">
               <div className="card-body">
                 <h2 className="card-title gradient-text">
                   Tailored WordPress Solutions for Success
@@ -246,7 +246,7 @@ const Services = () => {
                 </p>
                 <div className="card-actions justify-end">
                   <button
-                    className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
+                    className="btn btn-outline border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
                     onClick={() =>
                       document.getElementById("my_modal_3").showModal()
                     }

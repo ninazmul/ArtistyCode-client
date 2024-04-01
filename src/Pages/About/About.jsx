@@ -2,12 +2,8 @@ import "../../../src/index.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { FaDownload } from "react-icons/fa";
-import Slider from "../Home/Slider";
-import acLogo from "/src/assets/Ac logo white text.webp";
 
 import img from "../../assets/my/Untitled design.webp";
-import { Link } from "react-router-dom";
 import Team from "../Team";
 const About = () => {
   useEffect(() => {
@@ -21,11 +17,11 @@ const About = () => {
   return (
     <div>
       <div className="hero min-h-screen">
-        <div className="hero-content flex-col-reverse lg:flex-row-reverse">
-          <div className="flex-1">
+        <div className="hero-content flex-col-reverse lg:flex-row-reverse gap-4">
+          <div className="w-4/5 md:w-1/2">
             <img
               src={img}
-              className="border-2 p-1 border-purple-700 img_glow "
+              className="border-2 p-1 border-purple-700 img_glow"
             />
           </div>
           <div className="flex-1">
