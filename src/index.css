@@ -29,6 +29,16 @@
   z-index: 1;
 }
 
+.planBg1 {
+  background-image: linear-gradient(to bottom right, #4e01ab, #e601f6, #4602a5);
+}
+.planBg2 {
+  background-image: linear-gradient(to bottom right, #029f41, #03fd35, #028c37);
+}
+.planBg3 {
+  background-image: linear-gradient(to bottom right, #cc7109, #f1c62a, #fb7500);
+}
+
 .glow {
   transition: all 0.3s ease-in-out;
 }

@@ -54,138 +54,131 @@ const Plans = () => {
   return (
     <div className="py-4 md:py-10">
       <div className="flex justify-center py-4">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg gradient-text uppercase px-4 border-purple-700">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg  uppercase px-4 border-purple-700 gradient-text">
           Pick Your Perfect Plan
         </h1>
       </div>
       <div className="relative">
         <Slider ref={sliderRef} {...settings}>
           <div className="h-full px-4 py-4">
-            <div className="card glass service_glow h-[820px] lg:h-[700px]">
-              <div className="card-body">
-                <h2 className="card-title gradient-text md:text-2xl">
-                  Pre-made Template:
-                </h2>
+            <div className="card planBg1 text-white service_glow h-[820px] lg:h-[720px]">
+              <div className="card-body relative">
+                <div className="absolute top-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-b-none w-full">
+                  <h2 className="card-title  text-2xl md:text-3xl bg-white text-purple-500 px-4 rounded-lg h-28 font-bold">
+                    Pre-made Template:
+                  </h2>
+                </div>
                 <div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Features:
-                    </h3>
-                    <p className=" gradient-text py-2 font-semibold">
+                  <div className="pt-28">
+                    <h3 className=" font-bold text-xl">Features:</h3>
+                    <p className="  py-2 font-semibold">
                       1. Choose from a selection of pre-made templates.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       2. Customization options available within the template
                       framework.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       3. Suitable for individuals or small businesses looking
                       for a quick and affordable online presence.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       4. Includes basic features such as contact forms, image
                       galleries, and responsive design.
                     </p>
                   </div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Pricing:
+                  <div className="absolute bottom-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-t-none text-purple-500 w-full">
+                    <p>Starting from</p>
+                    <h3 className="text-xl font-bold md:text-2xl">
+                      5k BDT ($50 USD)
                     </h3>
-                    <p className=" gradient-text py-2 font-semibold">
-                      Ranges from 5k BDT ($50 USD) to 15k BDT ($150 USD)
-                      depending on the template and functionality.
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="h-full px-4 py-4">
-            <div className="card glass service_glow h-[820px] lg:h-[700px]">
-              <div className="card-body">
-                <h2 className="card-title gradient-text md:text-2xl">
-                  Custom Dynamic Website:
-                </h2>
+            <div className="card planBg2 text-white service_glow h-[820px] lg:h-[720px]">
+              <div className="card-body relative">
+                <div className="absolute top-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-b-none w-full">
+                  <h2 className="card-title  text-2xl md:text-3xl bg-white text-green-500 px-4 rounded-lg h-28 font-bold">
+                    Custom Dynamic Website:
+                  </h2>
+                </div>
+
                 <div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Features:
-                    </h3>
-                    <p className=" gradient-text py-2 font-semibold">
+                  <div className="pt-28">
+                    <h3 className=" font-bold text-xl">Features:</h3>
+                    <p className="  py-2 font-semibold">
                       1. Custom-built website with dynamic content management
                       capabilities.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       2. Customizable templates to match your brand identity.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       3. Dynamic pages such as blogs, news, events, Agency etc.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       4. Includes basic features such as contact forms, image
                       galleries, and responsive design.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       5. Contact form integration for user engagement.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       6. Responsive design for optimal viewing on all devices.
                     </p>
                   </div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Pricing:
+                  <div className="absolute bottom-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-t-none text-green-500 w-full">
+                    <p>Starting from</p>
+                    <h3 className="text-xl font-bold md:text-2xl">
+                      30k BDT ($300 USD)
                     </h3>
-                    <p className=" gradient-text py-2 font-semibold">
-                      Starting from 30k BDT ($300 USD) for a basic dynamic
-                      website.
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="h-full px-4 py-4">
-            <div className="card glass service_glow_special h-[820px] lg:h-[700px]">
-              <div className="card-body">
-                <h2 className="card-title gradient-text md:text-2xl">
-                  {" "}
-                  E-commerce or Industry-Level Website:
-                </h2>
+            <div className="card planBg3 text-white service_glow_special h-[820px] lg:h-[720px]">
+              <div className="card-body relative">
+                <div className="absolute top-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-b-none w-full">
+                  <h2 className="card-title  text-2xl md:text-3xl bg-white text-orange-500 px-4 rounded-lg h-28">
+                    {" "}
+                    E-commerce or Industry-Level Website:
+                  </h2>
+                </div>
+
                 <div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Features:
-                    </h3>
-                    <p className=" gradient-text py-2 font-semibold">
+                  <div className="pt-28">
+                    <h3 className=" font-bold text-xl">Features:</h3>
+                    <p className="  py-2 font-semibold">
                       1. Customized website tailored to the needs of e-commerce
                       businesses or industries.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       2. Advanced e-commerce functionalities including product
                       listings, shopping cart, and secure payment gateway
                       integration.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       3. Inventory management and order tracking systems.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       4. Dynamic content management for product updates and
                       promotions.
                     </p>
-                    <p className=" gradient-text py-2 font-semibold">
+                    <p className="  py-2 font-semibold">
                       5. Responsive design and SEO optimization for enhanced
                       visibility.
                     </p>
                   </div>
-                  <div>
-                    <h3 className="gradient-text font-bold text-xl">
-                      Pricing:
+                  <div className="absolute bottom-0 left-0 text-center py-2 px-4 bg-white rounded-lg rounded-t-none text-orange-500 w-full">
+                    <p>Starting from</p>
+                    <h3 className="text-xl font-bold md:text-2xl">
+                      70k BDT ($700 USD)
                     </h3>
-                    <p className=" gradient-text py-2 font-semibold">
-                      Starting from 70k BDT ($700 USD) for a basic e-commerce
-                      website.
-                    </p>
                   </div>
                 </div>
               </div>
