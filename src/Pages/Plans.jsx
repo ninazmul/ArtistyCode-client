@@ -12,7 +12,7 @@ const Plans = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,
+    speed: 1500,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
