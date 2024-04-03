@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiUpwork } from "react-icons/si";
 import logo from "../../assets/Ac logo white text.webp";
-
+import niLogo from "../../../public/N.I. Logo.png";
 const Footer = () => {
   return (
     <div>
@@ -20,12 +20,15 @@ const Footer = () => {
             <Link to="/contact" className="link link-hover">
               Contact Us
             </Link>
-            <Link to="/jobs" className="link link-hover">
+            <Link to="/faq" className="link link-hover">
+              FAQ
+            </Link>
+            <Link to="/dashboard/jobs" className="link link-hover">
               Jobs
             </Link>
           </nav>
           <nav className="flex flex-col">
-            <h6 className="footer-title">Services</h6>
+            <h6 className="footer-title">Policies</h6>
             <Link to="/terms" className="link link-hover">
               Terms & Conditions
             </Link>
@@ -97,11 +100,7 @@ const Footer = () => {
             <div className="flex items-center">
               <p>Developer:</p>{" "}
               <Link to="https://ni-portfolio.web.app" target="_blank">
-                <img
-                  src="../../../public/N.I. Logo.png"
-                  alt=""
-                  className="w-24 lg:w-32"
-                />
+                <img src={niLogo} alt="" className="w-24 lg:w-32" />
               </Link>
             </div>
           </div>

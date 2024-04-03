@@ -1,16 +1,23 @@
 import { useState } from "react";
-import useAxiosSecure from "../Pages/Hooks/useAxiosSecure";
 import Swal from "sweetalert2";
-import { FaStar } from "react-icons/fa";
+import useAxiosSecure from "../Pages/Hooks/useAxiosSecure";
+import useAuth from "../Pages/Hooks/useAuth";
 
-const AddReview = () => {
+const Jobs = () => {
   const initialState = {
-    image: "",
-    rating: "",
-    reviewText: "",
+    name: "",
+    email: "",
+    phone: "",
+    linkedin: "",
+    github: "",
+    resume: "",
   };
 
-  const [formData, setFormData] = useState(initialState);
+  const { user } = useAuth(); // Get user data using the useAuth hook
+  const [formData, setFormData] = useState({
+    ...initialState,
+    email: user.email, // Set the email field to the user's email
+  });
   const [error, setError] = useState("");
   const axiosSecure = useAxiosSecure(); // Initialize the hook to get the axios instance
 
@@ -21,27 +28,18 @@ const AddReview = () => {
     }));
   };
 
-  const handleStarClick = (selectedRating) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      rating: selectedRating.toString(),
-    }));
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       setError("");
 
-      const response = await axiosSecure.post("/reviews", formData);
-
-      console.log(response);
+      const response = await axiosSecure.post("/jobs", formData);
 
       if (response.data) {
         Swal.fire({
           icon: "success",
-          title: "Review added successfully!",
+          title: "Job application submitted successfully!",
           showConfirmButton: false,
           timer: 1500,
         });
@@ -53,31 +51,15 @@ const AddReview = () => {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Failed to add review!",
+          text: "Failed to submit job application!",
         });
       }
     } catch (error) {
-      console.error("Error adding review:", error);
-      setError("An error occurred while adding the review. Please try again.");
-    }
-  };
-
-  const renderStars = () => {
-    const stars = [];
-    for (let i = 1; i <= 5; i++) {
-      stars.push(
-        <FaStar
-          key={i}
-          className={
-            i <= parseInt(formData.rating)
-              ? "text-yellow-500 cursor-pointer"
-              : "text-gray-300 cursor-pointer"
-          }
-          onClick={() => handleStarClick(i)}
-        />
+      console.error("Error submitting job application:", error);
+      setError(
+        "An error occurred while submitting the job application. Please try again."
       );
     }
-    return stars;
   };
 
   return (
@@ -85,71 +67,110 @@ const AddReview = () => {
       <div className="hero-content flex-col">
         <div className="text-center lg:text-left">
           <h1 className="text-2xl md:text-4xl font-bold text-center">
-            Add Review to{" "}
-            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>
-            's Portfolio!
+            Join Our Team at{" "}
+            <span className="text-purple-700 gradient-text">Your Company</span>!
           </h1>
           <p className="py-6">
-            Fill in the details below to add a new review to{" "}
-            <span className="text-purple-700 gradient-text">N.I. Nazmul</span>'s
-            portfolio.
+            Fill in the details below to submit your job application to{" "}
+            <span className="text-purple-700 gradient-text">Your Company</span>.
           </p>
         </div>
         <div className="card md:w-96 flex-shrink-0 shadow-2xl border-2 p-1 border-purple-700 card_glow text-white">
           <form className="card-body" onSubmit={handleSubmit}>
-            {/* Image input */}
+            {/* Name input */}
             <div className="form-control">
               <label className="label">
-                <span>Image URL (Optional)</span>
+                <span>Name</span>
               </label>
               <input
                 type="text"
-                placeholder="Image URL"
-                name="image"
+                placeholder="Your Name"
+                name="name"
                 className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
-                value={formData.image}
+                value={formData.name}
+                required
               />
             </div>
-            {/* Rating input */}
+            {/* Email input */}
             <div className="form-control">
               <label className="label">
-                <span>Rating</span>
+                <span>Email Address</span>
               </label>
-              <div className="flex items-center justify-center">
-                <div className="flex space-x-5 text-2xl">{renderStars()}</div>
-                <div>
-                  {" "}
-                  <input
-                    type="hidden"
-                    name="rating"
-                    value={formData.rating}
-                    required
-                  />
-                </div>
-              </div>
-            </div>
-            {/* Review text input */}
-            <div className="form-control">
-              <label className="label">
-                <span>Review Text (Optional)</span>
-              </label>
-              <textarea
-                placeholder="Write your review here..."
-                name="reviewText"
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                name="email"
                 className="input input-bordered glass border-purple-700 border-2 input_glow"
                 onChange={handleChange}
-                value={formData.reviewText}
+                value={formData.email}
+                readOnly // Make email field read-only as it's set from user data
               />
             </div>
-
+            {/* Phone input */}
+            <div className="form-control">
+              <label className="label">
+                <span>Phone Number</span>
+              </label>
+              <input
+                type="tel"
+                placeholder="Your Phone Number"
+                name="phone"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
+                onChange={handleChange}
+                value={formData.phone}
+                required
+              />
+            </div>
+            {/* LinkedIn input */}
+            <div className="form-control">
+              <label className="label">
+                <span>LinkedIn Profile (Optional)</span>
+              </label>
+              <input
+                type="url"
+                placeholder="Your LinkedIn Profile Link"
+                name="linkedin"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
+                onChange={handleChange}
+                value={formData.linkedin}
+              />
+            </div>
+            {/* GitHub input */}
+            <div className="form-control">
+              <label className="label">
+                <span>GitHub Profile (Optional)</span>
+              </label>
+              <input
+                type="url"
+                placeholder="Your GitHub Profile Link"
+                name="github"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
+                onChange={handleChange}
+                value={formData.github}
+              />
+            </div>
+            {/* Resume input */}
+            <div className="form-control">
+              <label className="label">
+                <span>Portfolio/Resume/CV (Optional)</span>
+              </label>
+              <input
+                type="url"
+                placeholder="Link to your Portfolio/Resume/CV"
+                name="resume"
+                className="input input-bordered glass border-purple-700 border-2 input_glow"
+                onChange={handleChange}
+                value={formData.resume}
+              />
+            </div>
             {error && <div className="text-red-500 mt-2">{error}</div>}
             <div className="form-control mt-6">
               <button
                 className="neno-button font-bold shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg py-4 px-8 uppercase relative overflow-hidden text-center"
                 type="submit"
               >
-                Add Review
+                Submit Job Application
               </button>
             </div>
           </form>
@@ -159,4 +180,4 @@ const AddReview = () => {
   );
 };
 
-export default AddReview;
+export default Jobs;

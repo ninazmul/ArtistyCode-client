@@ -51,6 +51,10 @@
   box-shadow: 0 0 15px #2200ff; /* Orange glow for cards */
 }
 
+.service_glow_special{
+  box-shadow: 0 0 15px #ff00f2; /* Orange glow for cards */
+}
+
 .input_glow {
   box-shadow: 0 0 15px #2200ff; /* Light orange glow for input fields */
 }

@@ -1,5 +1,5 @@
-
 import AboutCom from "../../Components/AboutCom";
+import Plans from "../Plans";
 import Team from "../Team";
 import AutoScrollReviews from "./AutoScrollReviews";
 import Header from "./Header";
@@ -10,11 +10,12 @@ const Home = () => {
   return (
     <div>
       <Header></Header>
-      <AboutCom></AboutCom>
-      <Team></Team>
       <Services></Services>
+      <Plans></Plans>
       <Projects></Projects>
       <AutoScrollReviews></AutoScrollReviews>
+      <Team></Team>
+      <AboutCom></AboutCom>
     </div>
   );
 };

@@ -50,8 +50,8 @@ const Header = () => {
           </span>
         </p>
         <div className="flex justify-center lg:justify-end">
-          <Link to="/contact" className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white">
-            Contact Us!
+          <Link to="/about" className="btn btn-outline m-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white">
+            About Us!
           </Link>
         </div>
       </div>

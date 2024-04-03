@@ -16,6 +16,8 @@ import UserHome from "./AdminUser/UserHome";
 import { RiUserStarLine } from "react-icons/ri";
 import { GiStarsStack } from "react-icons/gi";
 import ActiveLink2 from "../Components/ActiveLink2";
+import { MdDeveloperMode } from "react-icons/md";
+
 
 // Navbar component
 const Navbar = () => {
@@ -93,6 +95,13 @@ const Navbar = () => {
                 <ActiveLink2 className="p-2" to="/dashboard/allReviews">
                   <GiStarsStack />
                   Manage Review's
+                </ActiveLink2>
+              </li>
+              <li>
+                <ActiveLink2 className="p-2" to="/dashboard/dev">
+                  <MdDeveloperMode />
+
+                  Developers
                 </ActiveLink2>
               </li>
               <div>
@@ -194,6 +203,13 @@ const Navbar = () => {
                   Manage Review's
                 </ActiveLink2>
               </li>
+              <li>
+                <ActiveLink2 className="p-2" to="/dashboard/dev">
+                  <MdDeveloperMode />
+
+                  Developers
+                </ActiveLink2>
+              </li>
               <div>
                 <p className="border-t border-gray-300 my-4"></p>
               </div>
@@ -278,6 +294,7 @@ const ContentArea = () => {
     </div>
   );
 };
+
 
 // Dashboard component
 const Dashboard = () => {

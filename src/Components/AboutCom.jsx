@@ -14,7 +14,7 @@ const AboutCom = () => {
     return (
       <div>
         <div data-aos="fade-left">
-          <div className="flex justify-center pb-4">
+          <div className="flex justify-center pt-10 pb-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text">
               About Us
             </h1>

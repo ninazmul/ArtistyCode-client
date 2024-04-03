@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import ReactWhatsapp from "react-whatsapp";
 import { AuthContext } from "../../providers/AuthProviders";
@@ -11,6 +11,19 @@ import logo from "../../assets/Ac logo white text.webp";
 const Navbar = () => {
   const { user, signOUT } = useContext(AuthContext);
   const isSignedIn = !!user;
+  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
 
   const handleSignOut = async () => {
     try {
@@ -52,7 +65,11 @@ const Navbar = () => {
   );
 
   return (
-    <div className="flex justify-center p-2">
+    <div
+      className={`flex justify-center p-2 transition-transform duration-300 ${
+        visible ? "" : "-translate-y-full"
+      }`}
+    >
       <div className="navbar fixed z-30 glass rounded-full w-11/12 px-4">
         <div className="navbar-start">
           <div className="dropdown">

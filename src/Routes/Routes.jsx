@@ -23,6 +23,12 @@ import AllReviews from "../Layout/AllReviews";
 import Reviews from "../Pages/Portfolio/Review/Reviews";
 import ContactUs from "../Pages/Contact/ContactUs";
 import Projects from "../Pages/Home/Projects";
+import Terms from "../Pages/Terms";
+import Privacy from "../Pages/Privacy";
+import FAQ from "../Pages/FAQ";
+import Cookie from "../Pages/Cookie";
+import Jobs from "../Pages/Jobs";
+import ManageJobs from "../Pages/ManageJobs";
 
 const routes = createBrowserRouter([
   {
@@ -69,6 +75,22 @@ const routes = createBrowserRouter([
       {
         path: "/passwordReset",
         element: <PasswordReset></PasswordReset>,
+      },
+      {
+        path: "/terms",
+        element: <Terms></Terms>,
+      },
+      {
+        path: "/privacy",
+        element: <Privacy></Privacy>,
+      },
+      {
+        path: "/faq",
+        element: <FAQ></FAQ>,
+      },
+      {
+        path: "/cookie",
+        element: <Cookie></Cookie>,
       },
     ],
   },
@@ -149,6 +171,24 @@ const routes = createBrowserRouter([
         element: (
           <AdminRoute>
             <AllReviews></AllReviews>
+          </AdminRoute>
+        ),
+      },
+      {
+        path: "/dashboard/jobs",
+        element: (
+          <PrivateRoutes>
+            <Jobs></Jobs>
+          </PrivateRoutes>
+        ),
+      },
+      {
+        path: "/dashboard/dev",
+        element: (
+          <AdminRoute>
+            <PrivateRoutes>
+              <ManageJobs></ManageJobs>
+            </PrivateRoutes>
           </AdminRoute>
         ),
       },

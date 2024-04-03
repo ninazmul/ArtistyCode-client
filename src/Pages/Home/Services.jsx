@@ -89,48 +89,48 @@ const Services = () => {
                 id="my_modal_3"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass card_glow">
-                  <h2 className="font-bold text-lg gradient-text">
+                <div className="modal-box glass service_glow">
+                  <h2 className="font-bold text-lg">
                     As-salamu alaykum!
                   </h2>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Custom Web Applications:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     We specialize in building dynamic and scalable web
                     applications using the MERN (MongoDB, Express.js, React.js,
                     Node.js) stack, ensuring high performance and seamless user
                     experiences.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     API Development:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Our expertise extends to developing robust APIs with Node.js
                     and Express.js, enabling seamless integration of your web
                     application with external systems and services.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Real-Time Communication:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Harness the power of WebSocket technology to enable
                     real-time communication features in your MERN stack
                     application, ensuring instantaneous updates and
                     interactions.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Progressive Web Apps (PWAs):
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Elevate your web presence with Progressive Web Apps
                     developed using React.js, providing an app-like experience
                     to users across devices while leveraging web technologies.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Data Visualization:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Unlock valuable insights from your data with interactive and
                     visually appealing data visualization solutions built using
                     libraries like D3.js and Chart.js within your MERN stack
@@ -177,46 +177,46 @@ const Services = () => {
                 id="my_modal_2"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass card_glow">
-                  <h2 className="font-bold text-lg gradient-text">
+                <div className="modal-box glass service_glow">
+                  <h2 className="font-bold text-lg">
                     As-salamu alaykum!
                   </h2>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Custom PHP Solutions:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     From dynamic websites to robust web applications, we
                     leverage PHP's versatility to deliver tailored solutions
                     that meet your unique requirements.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Content Management Systems (CMS):
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Harness the power of popular CMS platforms like WordPress,
                     Joomla, and Drupal to easily manage and update your website
                     content without extensive technical knowledge.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     E-commerce Websites:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Create seamless online shopping experiences with custom PHP
                     e-commerce solutions, integrating secure payment gateways,
                     inventory management, and order processing functionalities.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     PHP Frameworks:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Utilize powerful PHP frameworks such as Laravel, Symfony,
                     and CodeIgniter to streamline development, enhance security,
                     and ensure scalability of your web application.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Database Integration:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Integrate MySQL or other relational databases seamlessly
                     with your PHP-based website to efficiently manage and
                     retrieve data, ensuring optimal performance and reliability.
@@ -261,47 +261,47 @@ const Services = () => {
                 id="my_modal_3"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass card_glow">
-                  <h2 className="font-bold text-lg gradient-text">
+                <div className="modal-box glass service_glow">
+                  <h2 className="font-bold text-lg">
                     As-salamu alaykum!
                   </h2>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Custom WordPress Themes:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Stand out from the crowd with bespoke WordPress themes
                     tailored to your brand identity and specific requirements,
                     ensuring a unique and memorable online presence.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Plugin Development:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Extend the functionality of your WordPress website with
                     custom plugins developed to address your unique needs,
                     enhancing usability and user experience.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Responsive Design:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Ensure your WordPress website looks and functions flawlessly
                     across devices with responsive design techniques, catering
                     to the increasing number of mobile users.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     SEO Optimization:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Boost your visibility in search engine rankings and attract
                     more organic traffic with WordPress SEO optimization,
                     including keyword optimization, meta tags, and site speed
                     enhancements.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl ">
                     Website Maintenance:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Keep your WordPress website secure and up-to-date with
                     regular maintenance services, including software updates,
                     security patches, and backups, to ensure optimal performance

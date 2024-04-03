@@ -159,14 +159,12 @@ const Team = () => {
                 id="my_modal_1"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <div className="modal-box glass card_glow">
-                  <h2 className="font-bold text-lg gradient-text">
-                    As-salamu alaykum!
-                  </h2>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                <div className="modal-box glass service_glow">
+                  <h2 className="font-bold text-lg">As-salamu alaykum!</h2>
+                  <h3 className="py-2 text-start font-bold text-xl">
                     Meet Our Developers:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     At ArtistyCode Studio, our team comprises talented
                     developers specializing in MERN stack, PHP, and Wordpress.
                     From crafting immersive web applications with MERN to
@@ -174,16 +172,19 @@ const Team = () => {
                     Wordpress websites, our developers bring expertise and
                     innovation to every project.
                   </p>
-                  <h3 className="py-2 text-start gradient-text font-bold text-xl underline">
+                  <h3 className="py-2 text-start font-bold text-xl">
                     Join Our Team:
                   </h3>
-                  <p className=" text-justify gradient-text">
+                  <p className=" text-justify">
                     Are you a developer seeking opportunities? Submit your
                     information on our <Link to="/jobs">Jobs</Link> page, and if
                     we need your expertise, we'll be in touch. Let's create
                     together!
                   </p>
-                  <Link className="btn btn-outline my-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white">
+                  <Link
+                    to="/dashboard/jobs"
+                    className="btn btn-outline my-4 border-t-1 border-x-1 border-b-4 neno-button shadow-xl hover:shadow-purple-800/50 border-2 hover:bg-purple-700 border-purple-700 rounded-lg bg-blue-500/20 uppercase relative overflow-hidden text-center font-extrabold text-white"
+                  >
                     Apply as a developer
                   </Link>
                   <div className="modal-action">
