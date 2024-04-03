@@ -12,7 +12,7 @@ const Plans = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 5000,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -52,7 +52,7 @@ const Plans = () => {
     };
   }, []);
   return (
-    <div className="py-4 md:py-10" data-aos="fade-up">
+    <div className="py-4 md:py-10">
       <div className="flex justify-center py-4">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg gradient-text uppercase px-4 border-purple-700">
           Pick Your Perfect Plan

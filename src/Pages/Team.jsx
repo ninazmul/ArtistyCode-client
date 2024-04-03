@@ -9,7 +9,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
-import Aos from "aos";
 
 const Team = () => {
   const sliderRef = useRef(null);
@@ -59,16 +58,8 @@ const Team = () => {
     };
   }, []);
 
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-quart",
-      delay: 0,
-      duration: 750,
-    });
-  }, []);
-
   return (
-    <div data-aos="fade-right">
+    <div>
       <div className="flex justify-center py-4">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center gradient-text border-b-4 rounded-lg text-white uppercase px-4 border-purple-700">
           Meet the team

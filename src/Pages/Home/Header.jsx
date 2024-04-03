@@ -1,14 +1,7 @@
-import { BsFacebook } from "react-icons/bs";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-// import { TfiEmail } from "react-icons/tfi";
-import { TbBrandFiverr } from "react-icons/tb";
-import { SiUpwork } from "react-icons/si";
 
 import "../../../src/index.css";
 import { Link } from "react-router-dom";
-import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 
 import banner from "/src/assets/my/web.webp";
@@ -16,13 +9,6 @@ import { IoSparklesSharp } from "react-icons/io5";
 
 
 const Header = () => {
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-quart",
-      delay: 0,
-      duration: 750,
-    });
-  }, []);
 
   return (
     <div className="flex flex-col md:flex-row items-center ">

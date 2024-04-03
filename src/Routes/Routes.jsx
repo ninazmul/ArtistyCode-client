@@ -185,7 +185,7 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard/dev",
         element: (
-          <AdminRoute>
+          <AdminRoute> 
             <PrivateRoutes>
               <ManageJobs></ManageJobs>
             </PrivateRoutes>

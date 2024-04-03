@@ -1,20 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import useAuth from "../Hooks/useAuth";
-import Aos from "aos";
 
 export const ContactUs = () => {
   const form = useRef();
   const { user } = useAuth();
-
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-out-quart",
-      delay: 0,
-      duration: 750,
-    });
-  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -47,9 +38,7 @@ export const ContactUs = () => {
     <div className="py-4 flex flex-col items-center justify-center">
       <div>
         <div className="flex justify-center pb-4">
-          <h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text"
-          >
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700 gradient-text">
             Contact Us
           </h1>
         </div>
@@ -80,22 +69,17 @@ export const ContactUs = () => {
               potential project, or simply want to say hello, we're here to
               help. We strive to respond to all inquiries promptly.
             </p>
-            <p className="gradient-text py-2">
-              ArtistyCode Studio Team.
-            </p>
+            <p className="gradient-text py-2">ArtistyCode Studio Team.</p>
           </div>
         </div>
       </div>
       <div className="flex justify-center py-4">
-        <h1
-          data-aos="fade-up"
-          className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700"
-        >
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-normal text-center border-b-4 rounded-lg text-white uppercase px-4 border-purple-700">
           Contact me via{" "}
           <span className="text-purple-700 gradient-text">E-mail</span>
         </h1>
       </div>
-      <div className="" data-aos="fade-up">
+      <div className="">
         <div className="shadow-2xl border-2 p-1 border-purple-700 card_glow text-white rounded-xl md:w-[700px]">
           <form className="card-body" ref={form} onSubmit={sendEmail}>
             <div className="form-control">
