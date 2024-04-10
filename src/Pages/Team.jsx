@@ -103,7 +103,7 @@ const Team = () => {
                 />
               </figure>
               <div className="card-body p-0 items-center text-center">
-                <h2 className="card-title gradient-text">Redoy Khan</h2>
+                <h2 className="card-title gradient-text">Shabur Khan</h2>
                 <p className="uppercase gradient-text">Co-Founder </p>
                 <p className="text-xs gradient-text">(Wordpress developer)</p>
               </div>

@@ -91,132 +91,134 @@ const Jobs = () => {
       <div className="flex justify-center p-4">
         {user && !jobs.find((job) => job.email === user.email) ? (
           <>
-            <form
-              onSubmit={handleSubmit}
-              className="p-4 glass md:w-3/4 rounded-lg service_glow"
-            >
-              {/* Input fields */}
-              {/* Name */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="name"
-                >
-                  Name:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="name"
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              {/* Email */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="email"
-                >
-                  Email Address:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="email"
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="Your Email Address"
-                  required
-                />
-              </div>
-              {/* Phone Number */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="phone"
-                >
-                  Phone Number:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="phone"
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  placeholder="Your Phone Number"
-                  required
-                />
-              </div>
-              {/* LinkedIn Profile */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="linkedin"
-                >
-                  LinkedIn Profile:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="linkedin"
-                  type="url"
-                  name="linkedin"
-                  value={formData.linkedin}
-                  onChange={handleInputChange}
-                  placeholder="Your LinkedIn Profile Link"
-                />
-              </div>
-              {/* GitHub Profile */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="github"
-                >
-                  GitHub Profile:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="github"
-                  type="url"
-                  name="github"
-                  value={formData.github}
-                  onChange={handleInputChange}
-                  placeholder="Your GitHub Profile Link"
-                />
-              </div>
-              {/* Resume/CV */}
-              <div className="mb-4">
-                <label
-                  className="block gradient-text text-sm font-bold mb-2"
-                  htmlFor="resume"
-                >
-                  Portfolio:
-                </label>
-                <input
-                  className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
-                  id="resume"
-                  type="url"
-                  name="resume"
-                  value={formData.resume}
-                  onChange={handleInputChange}
-                  placeholder="Link to your Portfolio/Resume/CV"
-                />
-              </div>
-              {/* Submit button */}
-              <div className="flex items-center justify-between">
-                <button
-                  className="bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-                  type="submit"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+            <div className="w-full flex justify-center mb-20">
+              <form
+                onSubmit={handleSubmit}
+                className="p-4 glass w-full md:w-3/4 rounded-lg service_glow"
+              >
+                {/* Input fields */}
+                {/* Name */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="name"
+                  >
+                    Name:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="name"
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                {/* Email */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="email"
+                  >
+                    Email Address:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="email"
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="Your Email Address"
+                    required
+                  />
+                </div>
+                {/* Phone Number */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="phone"
+                  >
+                    Phone Number:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="Your Phone Number"
+                    required
+                  />
+                </div>
+                {/* LinkedIn Profile */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="linkedin"
+                  >
+                    LinkedIn Profile:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="linkedin"
+                    type="url"
+                    name="linkedin"
+                    value={formData.linkedin}
+                    onChange={handleInputChange}
+                    placeholder="Your LinkedIn Profile Link"
+                  />
+                </div>
+                {/* GitHub Profile */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="github"
+                  >
+                    GitHub Profile:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="github"
+                    type="url"
+                    name="github"
+                    value={formData.github}
+                    onChange={handleInputChange}
+                    placeholder="Your GitHub Profile Link"
+                  />
+                </div>
+                {/* Resume/CV */}
+                <div className="mb-4">
+                  <label
+                    className="block gradient-text text-sm font-bold mb-2"
+                    htmlFor="resume"
+                  >
+                    Portfolio:
+                  </label>
+                  <input
+                    className="border border-purple-700 rounded w-full py-2 px-3 gradient-text"
+                    id="resume"
+                    type="url"
+                    name="resume"
+                    value={formData.resume}
+                    onChange={handleInputChange}
+                    placeholder="Link to your Portfolio/Resume/CV"
+                  />
+                </div>
+                {/* Submit button */}
+                <div className="flex items-center justify-between">
+                  <button
+                    className="bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </>
         ) : (
           <>
